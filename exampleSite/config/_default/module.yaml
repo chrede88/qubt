@@ -1,0 +1,8 @@
+############################
+## MODULES
+## Add more modules if needed
+## https://gohugo.io/hugo-modules/
+############################
+
+imports:
+  - path: github.com/chrede88/qubt

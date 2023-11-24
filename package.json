@@ -1,0 +1,32 @@
+{
+  "name": "Qubt",
+  "version": "1.0.0",
+  "description": "Qubt blog theme for Hugo",
+  "main": "index.js",
+  "scripts": {
+    "build-tailwind": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/compiled/main.css",
+    "dev-tailwind": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/compiled/main.css --watch",
+    "example-site": "hugo server --source ./exampleSite --themesDir ../..",
+    "lighthouse": "export LIGHTHOUSE_BADGES_CONFIGURATION_PATH='./lighthouse-config.json' && npx lighthouse-badges --url https://chrede88.github.io/qubt/ --output-path ./lighthouse --badge-style plastic --save-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrede88/qubt.git"
+  },
+  "homepage": "https://github.com/chrede88/qubt#readme",
+  "keywords": [
+    "Hugo",
+    "blog",
+    "minimal",
+    "tailwind"
+  ],
+  "author": "Christian Olsen",
+  "license": "MIT",
+  "dependencies": {
+    "lighthouse-badges": "^1.2.17",
+    "tailwindcss": "^3.3.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10"
+  }
+}

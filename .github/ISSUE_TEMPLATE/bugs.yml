@@ -1,0 +1,47 @@
+name: 🐛 Bugs
+description: Report an issue while using the theme
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check that a similar issue has not already been opened. [View open issues](https://github.com/Chrede88/qubt/issues)
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe your issue and how to reproduce it, including what you expected to happen.
+    validations:
+      required: true
+  - type: input
+    id: theme-version
+    attributes:
+      label: Theme version
+      description: What version of the theme are you using?
+      placeholder: v1.0
+    validations:
+      required: true
+  - type: input
+    id: hugo-version
+    attributes:
+      label: Hugo version
+      description: What version of Hugo are you using?
+      placeholder: v0.119.0
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Which browser are you using?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Hugo log output
+      description: Please copy and paste any relevant Hugo log output.
+      render: shell

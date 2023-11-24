@@ -1,0 +1,63 @@
+{{ define "main" }}
+
+<div class="max-w-screen-xl mx-auto flex flex-col justify-center items-center mt-12 mb-2">
+  {{/* Add image and title */}}
+  {{ $image := resources.GetMatch .Site.Params.Author.image }}
+  {{ $name := .Params.name | default .Site.Params.Author.name }}
+  {{ $icon := .Params.icon | default .Site.Params.Author.icon }}
+  {{ with $image }}
+    {{ $image = $image.Filter (images.Process "resize 288x288 webp" ) }}
+    <div class="relative w-48">
+      <img
+        class="mb-2 rounded-full h-48 w-48"
+        width="192"
+        height="192"
+        alt="{{ $name | default "Author" }}"
+        src="{{ $image.RelPermalink }}"
+      />
+      {{ with $icon }}
+      <div class="flex justify-center items-center absolute right-0 bottom-4 w-10 h-10 rounded-full bg-neutral-300 border-solid border-2 border-slate-50 dark:bg-neutral-500">
+        {{ . | emojify }}
+      </div>
+      {{ end }}
+    </div>
+  {{ end }}
+        
+  <h1 class="text-4xl text-center font-extrabold text-slate-700 dark:text-slate-200">
+    {{ $name | markdownify | emojify }}
+  </h1>
+
+  {{ with .Params.jobTitle }}
+    <h2 class="text-2xl text-center text-slate-500 dark:text-slate-400 mt-2">
+      {{ . | markdownify | emojify }}
+    </h2>
+  {{ end }}
+  <div class="flex flex-wrap items-center justify-center mt-4">
+    {{ range $links := .Site.Params.Links }}
+      {{ range $type, $data := $links }}
+        {{ $href := $data }}
+        {{ $icon := $type }}
+        {{ $iconPath := resources.Get (print "icons/" $icon ".svg") }}
+        {{ with $iconPath }}
+          <a class="link" href="{{ $href }}" target="_blank" rel="me noopener noreferrer" aria-label="{{ $icon }}">
+            <span class="link_svg">
+              {{ $iconPath.Content | safeHTML }}
+            </span>
+          </a>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
+
+<div class="max-w-screen-lg mx-auto px-4 mt-8 flex justify-left">
+  <article>
+    {{ if .Params.bio }}
+      <h1 class="text-4xl font-extrabold text-slate-700 dark:text-slate-200 mb-4">Biography</h1>
+      <span class="prose prose-slate dark:prose-invert text-lg text-slate-700 dark:text-slate-200">
+        {{ .Content }}
+      </span>
+    {{ end }}
+</div>
+
+{{ end }}

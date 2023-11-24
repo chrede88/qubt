@@ -1,0 +1,16 @@
+############################
+## CHANGE THESE
+############################
+
+baseURL: 'https://chrede88.github.io/qubt'
+title: 'Qubt Theme'
+
+############################
+## MISC
+############################
+
+enableEmoji: true
+disableKinds: ['taxonomy', 'term']
+languageCode: 'en-us'
+
+

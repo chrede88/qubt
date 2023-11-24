@@ -1,0 +1,43 @@
+{{ define "main" }}
+{{ $featureimage := resources.GetMatch .Params.featureimage}}
+{{ $featuredcaption := .Params.caption }}
+{{ $date := .Date | time.Format ":date_medium" }}
+{{ $DPT := printf "%s - %d minute read" $date .ReadingTime }}
+
+<div class="justify-left mx-auto mt-8 flex max-w-screen-md px-4">
+  <article>
+    <h1 class="text-4xl font-extrabold text-slate-700 dark:text-slate-200">
+      {{ .Title | emojify }}
+    </h1>
+    <h2 class="mt-4 text-2xl text-slate-500 dark:text-slate-400">
+      {{ .Params.subtitle | emojify }}
+    </h2>
+    <div class="mb-4 mt-2 text-sm text-slate-500 dark:text-slate-400">
+      {{ $DPT }}
+    </div>
+
+    {{ with $featureimage }}
+      {{ $featureimage = $featureimage.Filter (images.Process "resize 736x webp" ) }}
+      <div class="flex flex-col">
+        <img
+          class="mt-4 h-full w-full object-cover"
+          src="{{ $featureimage.RelPermalink }}"
+          alt="feature image"
+          height="{{ $featureimage.Height }}"
+          width="{{ $featureimage.Width }}"
+        />
+        {{ with $featuredcaption }}
+        <span class="mb-4 mt-1 text-center text-sm text-slate-700 dark:text-slate-200">
+          {{ $featuredcaption | emojify }}
+        </span>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    <span class="prose prose-slate text-lg text-slate-700 dark:prose-invert dark:text-slate-200">
+      {{ .Content }}
+    </span>
+  </article>
+</div>
+
+{{ end }}

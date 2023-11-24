@@ -1,0 +1,17 @@
+/*! L1nkr v1.7.0| MIT License | https://github.com/Chrede88/L1nkr */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link {
+  @apply w-10 h-10 m-1 bg-transparent transform hover:scale-125 transition ease-out duration-300;
+}
+
+.link_svg {
+  @apply rounded-full fill-slate-700 dark:fill-slate-50
+}
+
+.toggle-btn {
+  @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
+}

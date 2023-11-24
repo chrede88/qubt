@@ -1,0 +1,72 @@
+############################
+## Author
+############################
+
+author:
+  name: "Qubt"
+  image: author.jpeg
+  greeting: "A personal blog theme for Hugo :evergreen_tree:"
+  icon: ":wave:"
+
+############################
+## Links
+############################
+
+links:
+  - github: https://github.com/chrede88/qubt
+  # - gitlab: 
+  - facebook: https://github.com/chrede88/qubt
+  # - x-twitter:
+  # - mastodon:
+  - linkedin: https://github.com/chrede88/qubt
+  - instagram: https://github.com/chrede88/L1nkr
+  # - reddit: 
+  # - telegram: 
+  # - whatsapp: 
+  # - signal: 
+  # - codepen: 
+  # - dev: 
+  - email: https://github.com/chrede88/qubt
+  - website: https://github.com/chrede88/qubt
+  # - link: 
+  # - discord:
+  # - orcid:
+  # - slack:
+  # - stack-overflow: 
+  # - twitch: 
+  # - patreon: 
+  # - soundcloud:
+  # - dribbble: 
+  # - stack-exchange: 
+  # - tiktok: 
+  # - youtube:
+  # - keybase: 
+  # - flickr: 
+  # - tumblr:
+  # - kickstarter: 
+  # - snapchat:
+  # - bluesky: 
+  # - bitbucket:
+  # - bandcamp: 
+  # - etsy: 
+  # - spotify: 
+  # - pinterest: 
+  # - strava: 
+  # - untappd: 
+  # - skype: 
+  # - medium: 
+  # - foursquare: 
+  # - apple: 
+  # - amazon: 
+  # - google: 
+  # - paypal: 
+  # - windows: 
+
+###############################
+## OpenGraph & Twitter Cards
+###############################
+
+title: "Qubt Theme"
+description: "Demo site build with Qubt & Hugo"
+images:
+  - thumbnail.jpeg

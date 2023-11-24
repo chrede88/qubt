@@ -1,0 +1,20 @@
+module:
+  hugoVersion:
+    min: '0.119.0'
+    extended: true
+  mounts:
+    - source: static
+      target: static
+    - source: layouts
+      target: layouts
+    - source: data
+      target: data
+    - source: assets
+      target: assets
+    - source: archetypes
+      target: archetypes
+security:
+  funcs:
+    getenv:
+      - ^HUGO_
+      - ^WC_

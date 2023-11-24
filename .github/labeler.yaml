@@ -1,0 +1,12 @@
+area/exampleSite:
+  - "exampleSite/**/*"
+area/github:
+  - ".github/**/*"
+area/css:
+  - "assets/css/**/*"
+area/html:
+  - "layouts/**/*"
+area/lighthouse:
+  - "lighthouse/**/*"
+area/static:
+  - "static/**/*"

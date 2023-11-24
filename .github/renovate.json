@@ -1,0 +1,43 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "dependencyDashboardTitle": "Renovate Dashboard 🤖",
+  "commitMessagePrefix": "🤖",
+  "reviewers": ["chrede88"],
+  "timezone": "Europe/Zurich",
+  "schedule": [
+    "after 6pm and before 6am every weekday",
+    "every weekend"
+  ],
+  "customManagers": [
+    {
+      "description": "Update Hugo/Go version in Github actions",
+      "customType": "regex",
+      "fileMatch": ["^.github/(?:workflows|actions)/.+\\.ya?ml$"],
+      "matchStrings": ["datasource=(?<datasource>.*?) depName=(?<depName>.*?)\n.*?'(?<currentValue>.*)'\n"],
+      "versioningTemplate": "semver-coerced",
+      "extractVersionTemplate": "^(v|go)?(?<version>.*)$"
+    }
+  ],
+  "packageRules": [
+    {
+      "matchManagers": ["gomod"],
+      "matchDepTypes": ["indirect"],
+      "enabled": true
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "labels": ["type/major"]
+    },
+    {
+      "matchUpdateTypes": ["minor"],
+      "labels": ["type/minor"]
+    },
+    {
+      "matchUpdateTypes": ["patch"],
+      "labels": ["type/patch"]
+    }
+  ]
+}

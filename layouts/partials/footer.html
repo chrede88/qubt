@@ -1,0 +1,16 @@
+<div class="flex flex-col justify-center p-10">
+  {{/* Copyright */}}
+  <p class="text-center text-slate-700 dark:text-slate-400">
+    &copy;
+    {{ now.Format "2006" }}
+    {{ .Site.Params.Author.name | markdownify | emojify }}
+  </p>
+
+  {{/* Powered by */}}
+  {{ $default := "Published with {hugo} & {qubt}" }}
+  {{ $default = replace $default "{qubt}" "<a class=\"hover:underline hover:decoration-indigo-500 hover:text-indigo-500\" href=\"https://github.com/chrede88/qubt\" target=\"_blank\" rel=\"noopener noreferrer\">Qubt</a>" | safeHTML }}
+  {{ $default = replace $default "{hugo}" "<a class=\"hover:underline hover:decoration-indigo-500 hover:text-indigo-500\" href=\"https://gohugo.io\" target=\"_blank\" rel=\"noopener noreferrer\">Hugo</a>" | safeHTML }}
+  <p class="text-sm text-center text-slate-700 dark:text-slate-400">
+    {{ $default }}
+  </p>
+</div>

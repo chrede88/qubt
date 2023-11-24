@@ -1,0 +1,19 @@
+name = 'Qubt'
+license = 'MIT'
+licenselink = 'https://github.com/chrede88/qubt/LICENSE'
+description = 'Minimal blog Hugo theme'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/chrede88/qubt'
+
+# If you have a running demo of the theme
+demosite = 'https://chrede88.github.io/qubt'
+
+# Taxonomy terms
+tags = ['hugo','minimal','responsive','dark','light','dark mode','blog']
+features = ['minimal', 'blog', 'tailwindcss']
+
+# If the theme has a single author
+[author]
+  name = 'Christian Olsen'
+  homepage = 'https://cjsolsen.com'
