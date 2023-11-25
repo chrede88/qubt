@@ -27,7 +27,7 @@
     </h1>
 
     {{ with .Site.Params.Author.greeting }}
-      <h2 class="text-xl text-center text-slate-500 dark:text-slate-400 mt-4">
+      <h2 class="text-xl text-center text-slate-600 dark:text-slate-400 mt-4">
         {{ . | markdownify | emojify }}
       </h2>
     {{ end }}
