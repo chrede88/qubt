@@ -1,6 +1,6 @@
 {
   "name": "Qubt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Qubt blog theme for Hugo",
   "main": "index.js",
   "scripts": {
