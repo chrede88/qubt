@@ -40,7 +40,7 @@
   <div class="grid grid-cols-{{ $cols }} gap-1">
     {{ range $image := $images }}
       {{ $image = $image.Filter (images.Process "resize 768x webp") }}
-      <img src="{{ $image.RelPermalink }}" alt="image">
+      <img src="{{ $image.RelPermalink }}" alt="image" loading="lazy">
     {{ end }}
   </div>
   {{ with $figCaption }}
