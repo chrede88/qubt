@@ -1,0 +1,51 @@
+{{/* Enable an array of images to be loaded from a subfolder within a blog post.
+    I.e. `./content/blog/blogpost/images/`.
+    All images in the subfolder will be used!
+    Optionally set "numCols" to the wanted number of columns.
+    Optionally pass a general figure caption as "figCaption".
+    {{< figArray subfolder="folderName" >}} */}}
+
+{{/* load variables */}}
+{{ $page := .Page }}
+{{ $path := .Get "subfolder" }}
+{{ $figCaption := .Get "figCaption" | default "" }}
+{{ $numCols := .Get "numCols" }}
+
+{{/* get all images */}}
+{{ $globpattern := printf "%s/*.{jp[e]g,png,webp}" $path }}
+{{ $images := $page.Resources.Match $globpattern }}
+
+{{/* calc numCols if not set */}}
+{{ $cols := 1 }}
+{{ with $numCols }}
+  {{ if gt . 12 }}
+    {{ $cols = 12 }}
+  {{ else }}
+    {{ $cols = . }}
+  {{ end }}
+{{ else }}
+  {{ $numimages := $images | len }}
+  {{ if ge $numimages 3 }}
+    {{ if modBool $numimages 2 }}
+      {{ $cols = 2 }}
+    {{ else }}
+      {{ $cols = 3 }}
+    {{ end }}
+  {{ else }}
+    {{ $cols = $numimages }}
+  {{ end }}
+{{ end }}
+
+<div class="flex flex-col">
+  <div class="grid grid-cols-{{ $cols }} gap-1">
+    {{ range $image := $images }}
+      {{ $image = $image.Filter (images.Process "resize 768x webp") }}
+      <img src="{{ $image.RelPermalink }}" alt="image">
+    {{ end }}
+  </div>
+  {{ with $figCaption }}
+    <span class="-mt-6 mb-4 text-center text-sm text-slate-700 dark:text-slate-200">
+      {{ . | emojify }}
+    </span>
+  {{ end }}
+</div>
