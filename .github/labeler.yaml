@@ -1,12 +1,23 @@
 area/exampleSite:
-  - "exampleSite/**/*"
+- changed-files:
+  - any-glob-to-any-file: "exampleSite/**/*"
+
 area/github:
-  - ".github/**/*"
+- changed-files:
+  - any-glob-to-any-file: ".github/**/*"
+
 area/css:
-  - "assets/css/**/*"
+- changed-files:
+  - any-glob-to-any-file: "assets/css/**/*"
+
 area/html:
-  - "layouts/**/*"
+- changed-files:
+  - any-glob-to-any-file: "layouts/**/*"
+
 area/lighthouse:
-  - "lighthouse/**/*"
+- changed-files:
+  - any-glob-to-any-file: "lighthouse/**/*"
+
 area/static:
-  - "static/**/*"
+- changed-files:
+  - any-glob-to-any-file: "static/**/*"
