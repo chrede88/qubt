@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [1.1.2] - 2023-12-05
+
+### Changed
+- Blog list headline font size made smaller on mobile, to accommodate longer headlines.
+
+### Hugo
+- Support for Hugo v0.121.1
+
 ## [1.1.1] - 2023-12-05
 
 ### Hugo
@@ -24,7 +32,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [1.0.0] - 2023-11-25
 - Initial release
 
-[unreleased]: https://github.com/Chrede88/qubt/compare/v1.1.1...HEAD
+[unreleased]: https://github.com/Chrede88/qubt/compare/v1.1.2...HEAD
+[1.1.2]: https://github.com/Chrede88/qubt/releases/compare/v1.1.1...v1.1.2
 [1.1.1]: https://github.com/Chrede88/qubt/releases/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/Chrede88/qubt/releases/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/Chrede88/qubt/releases/compare/v1.0.0...v1.0.1
