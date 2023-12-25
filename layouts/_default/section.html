@@ -20,7 +20,7 @@
       <a href="{{ .RelPermalink }}">
         <div class="flex max-h-80 h-full w-full max-w-2xl flex-row rounded-xl bg-neutral-300 bg-clip-border text-slate-400 shadow-md dark:bg-neutral-700">
           {{ with $cardimage }}
-            {{ $cardimage = $cardimage.Filter (images.Process "fit 400x600 webp" ) }}
+            {{ $cardimage = $cardimage.Filter (images.Process "fit 400x600 Lanczos q80 webp" ) }}
             <div class="m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-clip-border dark:bg-neutral-700">
               <img
                 src="{{ $cardimage.RelPermalink }}"

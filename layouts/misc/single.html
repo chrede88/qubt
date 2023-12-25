@@ -6,7 +6,7 @@
   {{ $name := .Params.name | default .Site.Params.Author.name }}
   {{ $icon := .Params.icon | default .Site.Params.Author.icon }}
   {{ with $image }}
-    {{ $image = $image.Filter (images.Process "resize 288x288 webp" ) }}
+    {{ $image = $image.Filter (images.Process "resize 288x288 Lanczos q100 webp" ) }}
     <div class="relative w-48">
       <img
         class="mb-2 rounded-full h-48 w-48"

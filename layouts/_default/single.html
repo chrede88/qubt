@@ -17,7 +17,7 @@
     </div>
 
     {{ with $featureimage }}
-      {{ $featureimage = $featureimage.Filter (images.Process "resize 736x webp" ) }}
+      {{ $featureimage = $featureimage.Filter (images.Process "resize 736x Lanczos q100 webp" ) }}
       <div class="flex flex-col">
         <img
           class="mt-4 h-full w-full object-cover"
