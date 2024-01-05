@@ -7,7 +7,9 @@
     "build-tailwind": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/compiled/main.css",
     "dev-tailwind": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/compiled/main.css --watch",
     "example-site": "hugo server --source ./exampleSite --themesDir ../..",
-    "lighthouse": "export LIGHTHOUSE_BADGES_CONFIGURATION_PATH='./lighthouse-config.json' && npx lighthouse-badges --url https://chrede88.github.io/qubt/ --output-path ./lighthouse --badge-style plastic --save-report"
+    "lighthouse": "export LIGHTHOUSE_BADGES_CONFIGURATION_PATH='./lighthouse-config.json' && npx lighthouse-badges --url https://chrede88.github.io/qubt/ --output-path ./lighthouse --badge-style plastic --save-report",
+    "lint-check": "npx prettier --check ./layouts/",
+    "lint": "npx prettier --write ./layouts/"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,9 @@
     "tailwindcss": "3.4.0"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "0.5.10"
+    "@tailwindcss/typography": "0.5.10",
+    "prettier": "^3.1.1",
+    "prettier-plugin-go-template": "^0.0.15",
+    "prettier-plugin-tailwindcss": "^0.5.10"
   }
 }
