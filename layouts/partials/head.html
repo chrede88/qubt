@@ -7,33 +7,28 @@
 {{/* Site title */}}
 {{ $title := .Site.Title | default "Qubt Theme" }}
 <title>{{ $title }}</title>
-<meta name="title" content="{{ $title }}"/>
+<meta name="title" content="{{ $title }}" />
 
 {{/* Crator tag */}}
 {{ with .Site.Params.Author.name }}
-  <meta name="author"content="{{ . }}"/>
+  <meta name="author" content="{{ . }}" />
 {{ end }}
 
 {{/* Site description */}}
 {{ with .Site.Params.description }}
-  <meta name="description" content="{{ . }}"/>
+  <meta name="description" content="{{ . }}" />
 {{ end }}
 
 {{/* CSS bundle */}}
 {{ $assets := newScratch }}
 {{ $mainCSS :=resources.Get "css/compiled/main.css" }}
-{{ $assets.Add "css" (slice $mainCSS)}}
+{{ $assets.Add "css" (slice $mainCSS) }}
 {{ $customCSS := resources.Get "css/custom.css" }}
 {{ if $customCSS }}
-  {{$assets.Add "css" (slice $customCSS) }}
+  {{ $assets.Add "css" (slice $customCSS) }}
 {{ end }}
 {{ $bundleCSS := $assets.Get "css" | resources.Concat "css/main.bundle.css" | resources.Minify | resources.Fingerprint "sha512" }}
-<link
-  type="text/css"
-  rel="stylesheet"
-  href="{{ $bundleCSS.RelPermalink }}"
-  integrity="{{ $bundleCSS.Data.Integrity }}"
-/>
+<link type="text/css" rel="stylesheet" href="{{ $bundleCSS.RelPermalink }}" integrity="{{ $bundleCSS.Data.Integrity }}" />
 
 {{/* JS bundle */}}
 {{ $mainJS := resources.Get "js/main.js" }}
@@ -43,28 +38,15 @@
   {{ $assets.Add "js" (slice $customJS) }}
 {{ end }}
 {{ $bundleJS := $assets.Get "js" | resources.Concat "ja/main.bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
-<script
-  defer
-  src="{{ $bundleJS.RelPermalink }}"
-  integrity="{{ $bundleJS.Data.Integrity }}"
-></script>
+<script defer src="{{ $bundleJS.RelPermalink }}" integrity="{{ $bundleJS.Data.Integrity }}"></script>
 
 {{/* Favicon */}}
 {{ $icon := resources.GetMatch "icon.*" }}
 {{ with $icon }}
   {{ $iconApple := .Resize "180x180" }}
   {{ $icon := $icon.Resize "32x32" }}
-  <link
-    rel="apple-touch-icon"
-    sizes="180x180"
-    href="{{ $iconApple.RelPermalink }}"
-  />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="{{ $icon.RelPermalink }}"
-  />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ $iconApple.RelPermalink }}" />
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ $icon.RelPermalink }}" />
 {{ end }}
 
 {{/* OpenGraph & Twitter Cards */}}

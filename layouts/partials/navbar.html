@@ -1,14 +1,12 @@
-{{ $title := .Site.Title }} {{ $logo := resources.GetMatch "logo.*" }}
+{{ $title := .Site.Title }}
+{{ $logo := resources.GetMatch "logo.*" }}
+
 
 <section class="mx-auto flex max-w-screen-xl items-center justify-between p-4">
   <a href="{{ .Site.BaseURL }}" class="flex items-center space-x-3">
     {{ with $logo }}
       {{ $logo = $logo.Filter (images.Process "resize 120x120 webp") }}
-      <img
-        src="{{ $logo.RelPermalink }}"
-        class="h-8 w-8"
-        alt="Logo"
-      />
+      <img src="{{ $logo.RelPermalink }}" class="h-8 w-8" alt="Logo" />
     {{ end }}
     <span class="self-center whitespace-nowrap text-2xl font-semibold text-slate-700 dark:text-slate-400">
       {{ $title }}
@@ -16,11 +14,12 @@
   </a>
   <div>
     <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden" aria-label="hamburger-button">
-      <div class="absolute top-4 -mt-0.5 h-[3px] w-8 rounded bg-slate-700 transition-all duration-500 before:absolute before:h-[3px] before:w-8 before:-translate-x-4 before:-translate-y-2.5 before:rounded before:bg-slate-700 before:transition-all before:duration-500 before:content-[''] after:absolute after:h-[3px] after:w-8 after:-translate-x-4 after:translate-y-2.5 after:rounded after:bg-slate-700 after:transition-all after:duration-500 after:content-[''] dark:bg-slate-400 before:dark:bg-slate-400 after:dark:bg-slate-400"></div>
+      <div
+        class="absolute top-4 -mt-0.5 h-[3px] w-8 rounded bg-slate-700 transition-all duration-500 before:absolute before:h-[3px] before:w-8 before:-translate-x-4 before:-translate-y-2.5 before:rounded before:bg-slate-700 before:transition-all before:duration-500 before:content-[''] after:absolute after:h-[3px] after:w-8 after:-translate-x-4 after:translate-y-2.5 after:rounded after:bg-slate-700 after:transition-all after:duration-500 after:content-[''] dark:bg-slate-400 before:dark:bg-slate-400 after:dark:bg-slate-400"></div>
     </button>
     <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
       {{ range site.Menus.main }}
-        <a href="{{ .URL }}" class="px-3 py-2 text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
+        <a href="{{ .URL }}" class="px-3 py-2 text-slate-700 hover:text-indigo-500 md:p-0 dark:text-slate-400">
           {{ .Name }}
         </a>
       {{ end }}
@@ -30,7 +29,7 @@
 <section id="mobile-menu" class="absolute hidden w-full origin-top animate-open-menu flex-col justify-center bg-neutral-100 text-4xl dark:bg-neutral-800">
   <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
     {{ range site.Menus.main }}
-      <a href="{{ .URL }}" class="px-3 py-2 text-center text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
+      <a href="{{ .URL }}" class="px-3 py-2 text-center text-slate-700 hover:text-indigo-500 md:p-0 dark:text-slate-400">
         {{ .Name }}
       </a>
     {{ end }}

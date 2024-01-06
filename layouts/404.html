@@ -1,9 +1,9 @@
 {{ define "main" }}
-  <div class="flex flex-col justify-center items-center mt-24 md:mt-48 mb-2">
-    <h1 class="text-3xl md:text-8xl font-extrabold text-slate-700 dark:text-slate-200">Page not found!</h1>
-    <div class="flex flex-row justify-center m-4 space-x-4">
+  <div class="mb-2 mt-24 flex flex-col items-center justify-center md:mt-48">
+    <h1 class="text-3xl font-extrabold text-slate-700 md:text-8xl dark:text-slate-200">Page not found!</h1>
+    <div class="m-4 flex flex-row justify-center space-x-4">
       {{ range site.Menus.main }}
-        <a href="{{ .URL }}" class="px-3 py-1 bg-slate-700 dark:bg-slate-200 rounded-full text-slate-200 hover:text-indigo-500 dark:text-slate-700">
+        <a href="{{ .URL }}" class="rounded-full bg-slate-700 px-3 py-1 text-slate-200 hover:text-indigo-500 dark:bg-slate-200 dark:text-slate-700">
           {{ .Name }}
         </a>
       {{ end }}

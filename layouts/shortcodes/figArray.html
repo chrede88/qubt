@@ -1,10 +1,12 @@
 {{/* Enable an array of images to be loaded from a subfolder within a blog post.
-    I.e. `./content/blog/blogpost/images/`.
-    All images in the subfolder will be used!
-    Optionally set "numCols" to the wanted number of columns.
-    Optionally pass a general figure caption as "figCaption".
-    {{< figArray subfolder="folderName" >}} */}}
+  I.e. `./content/blog/blogpost/images/`.
+  All images in the subfolder will be used!
+  Optionally set "numCols" to the wanted number of columns.
+  Optionally pass a general figure caption as "figCaption".
+  {{< figArray subfolder="folderName"
+>}}
 
+*/}}
 {{/* load variables */}}
 {{ $page := .Page }}
 {{ $path := .Get "subfolder" }}
@@ -36,11 +38,12 @@
   {{ end }}
 {{ end }}
 
+
 <div class="flex flex-col">
-  <div class="grid grid-cols-{{ $cols }} gap-1">
+  <div class="grid-cols-{{ $cols }} grid gap-1">
     {{ range $image := $images }}
       {{ $image = $image.Filter (images.Process "resize 768x Lanczos q100 webp") }}
-      <img src="{{ $image.RelPermalink }}" alt="image" loading="lazy">
+      <img src="{{ $image.RelPermalink }}" alt="image" loading="lazy" />
     {{ end }}
   </div>
   {{ with $figCaption }}

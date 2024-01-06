@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <div class="flex flex-col justify-center items-center mt-24 md:mt-48 mb-2">
+  <div class="mb-2 mt-24 flex flex-col items-center justify-center md:mt-48">
     {{/* Add image and site title */}}
     {{ $image := resources.GetMatch .Site.Params.Author.image }}
     {{ $name := .Site.Params.Author.name }}
@@ -7,46 +7,36 @@
     {{ with $image }}
       {{ $image = $image.Filter (images.Process "resize 288x288 Lanczos q100 webp" ) }}
       <div class="relative w-48">
-        <img
-          class="mb-2 rounded-full h-48 w-48"
-          width="192"
-          height="192"
-          alt="{{ $name | default "Author" }}"
-          src="{{ $image.RelPermalink }}"
-        />
+        <img class="mb-2 h-48 w-48 rounded-full" width="192" height="192" alt="{{ $name | default "Author" }}" src="{{ $image.RelPermalink }}" />
         {{ with $icon }}
-        <div class="flex justify-center items-center absolute right-0 bottom-4 w-10 h-10 rounded-full bg-neutral-300 border-solid border-2 border-slate-50 dark:bg-neutral-500">
-          {{ . | emojify }}
-        </div>
+          <div class="absolute bottom-4 right-0 flex h-10 w-10 items-center justify-center rounded-full border-2 border-solid border-slate-50 bg-neutral-300 dark:bg-neutral-500">
+            {{ . | emojify }}
+          </div>
         {{ end }}
       </div>
     {{ end }}
-          
-    <h1 class="text-4xl text-center font-extrabold text-slate-700 dark:text-slate-200">
+
+
+    <h1 class="text-center text-4xl font-extrabold text-slate-700 dark:text-slate-200">
       {{ $name | markdownify | emojify }}
     </h1>
 
     {{ with .Site.Params.Author.greeting }}
-      <h2 class="text-xl text-center text-slate-600 dark:text-slate-400 mt-4">
+      <h2 class="mt-4 text-center text-xl text-slate-600 dark:text-slate-400">
         {{ . | markdownify | emojify }}
       </h2>
     {{ end }}
-    <div class="flex flex-wrap items-center justify-center mt-4">
+    <div class="mt-4 flex flex-wrap items-center justify-center">
       {{ range $links := .Site.Params.Links }}
         {{ range $type, $data := $links }}
           {{ $href := $data }}
           {{ $icon := $type }}
           {{ $iconPath := resources.Get (print "icons/" $icon ".svg") }}
           {{ with $iconPath }}
-            <a 
-              class="link"
-              href="{{ $href }}"
-              target="_blank"
-              rel="me noopener noreferrer"
-              aria-label="{{ $icon }}">
-            <span class="link_svg">
-              {{ $iconPath.Content | safeHTML }}
-            </span>
+            <a class="link" href="{{ $href }}" target="_blank" rel="me noopener noreferrer" aria-label="{{ $icon }}">
+              <span class="link_svg">
+                {{ $iconPath.Content | safeHTML }}
+              </span>
             </a>
           {{ end }}
         {{ end }}
