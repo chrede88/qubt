@@ -1,12 +1,11 @@
 {{/* Enable an array of images to be loaded from a subfolder within a blog post.
   I.e. `./content/blog/blogpost/images/`.
   All images in the subfolder will be used!
+  Function call: "{{< figArray subfolder="folderName" >}}"
   Optionally set "numCols" to the wanted number of columns.
   Optionally pass a general figure caption as "figCaption".
-  {{< figArray subfolder="folderName"
->}}
-
 */}}
+
 {{/* load variables */}}
 {{ $page := .Page }}
 {{ $path := .Get "subfolder" }}
@@ -28,10 +27,10 @@
 {{ else }}
   {{ $numimages := $images | len }}
   {{ if ge $numimages 3 }}
-    {{ if modBool $numimages 2 }}
-      {{ $cols = 2 }}
-    {{ else }}
+    {{ if modBool $numimages 3 }}
       {{ $cols = 3 }}
+    {{ else }}
+      {{ $cols = 2 }}
     {{ end }}
   {{ else }}
     {{ $cols = $numimages }}
