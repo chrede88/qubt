@@ -1,5 +1,6 @@
 {{ define "main" }}
-  <div class="mb-2 mt-24 flex flex-col items-center justify-center md:mt-48">
+<div class="flex items-center justify-center">
+  <div class="flex flex-col items-center justify-center mt-auto h-[75vh]">
     {{/* Add image and site title */}}
     {{ $image := resources.GetMatch .Site.Params.Author.image }}
     {{ $name := .Site.Params.Author.name }}
@@ -43,4 +44,5 @@
       {{ end }}
     </div>
   </div>
+</div>
 {{ end }}
