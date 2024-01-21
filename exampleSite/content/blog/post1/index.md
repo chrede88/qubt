@@ -14,6 +14,7 @@ Use the shortcode "figArray" to add images to your blog post. Add your images to
 ```
 {{</* figArray subfolder="<subfoldername>" figCaption="Some caption" numCols=2 */>}}
 ```
+
 Both "figCaption" and "numCols" are optional. The shortcode will try to guess the best number of columns to use for the array of figures if "numCols" is not passed.
 You will need one subfolder containing images per call to the shortcode. The image files need to be one of the following types: png, jpg, jpeg or webp.
 

@@ -1450,6 +1450,10 @@ video {
   white-space: nowrap;
 }
 
+.break-words {
+  overflow-wrap: break-word;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1859,6 +1863,10 @@ video {
   }
 }
 
+.prose-pre\:max-w-\[90vw\] :is(:where(pre):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  max-width: 90vw;
+}
+
 @media (min-width: 768px) {
   .md\:mt-48 {
     margin-top: 12rem;
@@ -1884,6 +1892,10 @@ video {
   .md\:text-8xl {
     font-size: 6rem;
     line-height: 1;
+  }
+
+  .md\:prose-pre\:max-w-screen-md :is(:where(pre):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+    max-width: 768px;
   }
 }
 
