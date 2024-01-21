@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+# [1.2.5] - 2024-01-21
+
+### Changed
+- Fixed issue where `pre` blocks would overflow the set max width.
+- Fixed issue where blog card headlines would overflow.
+- Changed how content on the homepage is aligned.
+
+### Go
+- Added support for go v1.21.6
+
 # [1.2.4] - 2024-01-06
 
 ### Hugo
