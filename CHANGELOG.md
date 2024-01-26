@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+# [1.2.6] - 2024-01-26
+
+### Hugo
+- Support for Hugo v0.122.0
+
 # [1.2.5] - 2024-01-21
 
 ### Changed
@@ -70,7 +75,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [1.0.0] - 2023-11-25
 - Initial release
 
-[unreleased]: https://github.com/Chrede88/qubt/compare/v1.2.4...HEAD
+[unreleased]: https://github.com/Chrede88/qubt/compare/v1.2.6...HEAD
+[1.2.6]: https://github.com/Chrede88/qubt/releases/compare/v1.2.5...v1.2.6
+[1.2.5]: https://github.com/Chrede88/qubt/releases/compare/v1.2.4...v1.2.5
 [1.2.4]: https://github.com/Chrede88/qubt/releases/compare/v1.2.3...v1.2.4
 [1.2.3]: https://github.com/Chrede88/qubt/releases/compare/v1.2.2...v1.2.3
 [1.2.2]: https://github.com/Chrede88/qubt/releases/compare/v1.2.1...v1.2.2
