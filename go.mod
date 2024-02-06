@@ -1,3 +1,3 @@
 module github.com/chrede88/qubt
 
-go 1.21.6
+go 1.21.7
