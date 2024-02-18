@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+# [1.2.7] - 2024-02-18
+
+### Fixed
+- Fixed issue where assets wouldn't be picked up unless placed in the top level folder
+
+### Go
+- Support for Go v1.22.0
+
 # [1.2.6] - 2024-01-26
 
 ### Hugo
