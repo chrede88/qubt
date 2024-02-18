@@ -1,7 +1,7 @@
 {{ define "main" }}
   <div class="mx-auto mb-2 mt-12 flex max-w-screen-xl flex-col items-center justify-center">
     {{/* Add image and title */}}
-    {{ $image := resources.GetMatch .Site.Params.Author.image }}
+    {{ $image := resources.GetMatch (print "**" .Site.Params.Author.image) }}
     {{ $name := .Params.name | default .Site.Params.Author.name }}
     {{ $icon := .Params.icon | default .Site.Params.Author.icon }}
     {{ with $image }}

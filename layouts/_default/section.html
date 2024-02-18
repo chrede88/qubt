@@ -15,7 +15,7 @@
   <div class="mx-auto max-w-screen-xl">
     <div class="mt-8 grid grid-flow-row grid-cols-1 justify-items-center gap-8 px-4 lg:grid-cols-2">
       {{ range .Pages.ByDate.Reverse }}
-        {{ $cardimage := resources.GetMatch .Params.cardimage }}
+        {{ $cardimage := resources.GetMatch (print "**" .Params.cardimage) }}
         <a href="{{ .RelPermalink }}">
           <div class="flex h-full max-h-80 w-full max-w-2xl flex-row rounded-xl bg-neutral-300 bg-clip-border text-slate-400 shadow-md dark:bg-neutral-700">
             {{ with $cardimage }}
@@ -37,7 +37,7 @@
                 <div class="flex items-center -space-x-3">
                   {{ range $authors := .Params.authors }}
                     {{ range $name, $image := $authors }}
-                      {{ $imgPath := resources.GetMatch $image }}
+                      {{ $imgPath := resources.GetMatch (print "/**/" $image) }}
                       {{ with $imgPath }}
                         {{ $imgPath = $imgPath.Filter (images.Process "resize 40x40 webp" ) }}
                         <img class="h-9 w-9 rounded-full border-2 border-slate-50 object-cover object-center" alt="{{ $name }}" src="{{ $imgPath.RelPermalink }}" />

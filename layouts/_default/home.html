@@ -2,7 +2,7 @@
   <div class="flex items-center justify-center">
     <div class="mt-auto flex h-[75vh] flex-col items-center justify-center">
       {{/* Add image and site title */}}
-      {{ $image := resources.GetMatch .Site.Params.Author.image }}
+      {{ $image := resources.GetMatch (print "**" .Site.Params.Author.image) }}
       {{ $name := .Site.Params.Author.name }}
       {{ $icon := .Site.Params.Author.icon }}
       {{ with $image }}

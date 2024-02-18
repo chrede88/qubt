@@ -1,5 +1,5 @@
 {{ define "main" }}
-  {{ $featureimage := resources.GetMatch .Params.featureimage }}
+  {{ $featureimage := resources.GetMatch (print "**" .Params.featureimage) }}
   {{ $featuredcaption := .Params.caption }}
   {{ $date := .Date | time.Format ":date_medium" }}
   {{ $DPT := printf "%s - %d minute read" $date .ReadingTime }}
