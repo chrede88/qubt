@@ -26,7 +26,7 @@ jobs:
           go-version: '1.22.1'
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           # renovate: datasource=github-releases depName=gohugoio/hugo
           hugo-version: '0.124.1'
