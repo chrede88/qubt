@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+# [1.2.10] - 2024-04-14
+
+### Changed
+- Example site author photo
+
 # [1.2.9] - 2024-04-11
 
 ### Fixed
@@ -102,7 +107,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [1.0.0] - 2023-11-25
 - Initial release
 
-[unreleased]: https://github.com/Chrede88/qubt/compare/v1.2.9...HEAD
+[unreleased]: https://github.com/Chrede88/qubt/compare/v1.2.10...HEAD
+[1.2.10]: https://github.com/Chrede88/qubt/releases/compare/v1.2.9...v1.2.10
 [1.2.9]: https://github.com/Chrede88/qubt/releases/compare/v1.2.8...v1.2.9
 [1.2.8]: https://github.com/Chrede88/qubt/releases/compare/v1.2.7...v1.2.8
 [1.2.7]: https://github.com/Chrede88/qubt/releases/compare/v1.2.6...v1.2.7
