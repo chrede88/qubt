@@ -47,7 +47,7 @@ jobs:
         uses: peaceiris/actions-hugo@v3
         with:
           # renovate: datasource=github-releases depName=gohugoio/hugo
-          hugo-version: '0.125.2'
+          hugo-version: '0.125.3'
           extended: true
           
       - name: Build
