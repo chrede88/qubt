@@ -33,11 +33,13 @@
 {{/* JS bundle */}}
 {{ $mainJS := resources.Get "js/main.js" }}
 {{ $assets.Add "js" (slice $mainJS) }}
+{{ $themeJS := resources.Get "js/theme.js" }}
+{{ $assets.Add "js" (slice $themeJS) }}
 {{ $customJS := resources.Get "js/custom.js" }}
 {{ if $customJS }}
   {{ $assets.Add "js" (slice $customJS) }}
 {{ end }}
-{{ $bundleJS := $assets.Get "js" | resources.Concat "ja/main.bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
+{{ $bundleJS := $assets.Get "js" | resources.Concat "js/main.bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
 <script defer src="{{ $bundleJS.RelPermalink }}" integrity="{{ $bundleJS.Data.Integrity }}"></script>
 
 {{/* Favicon */}}
@@ -52,3 +54,16 @@
 {{/* OpenGraph & Twitter Cards */}}
 {{ template "_internal/opengraph.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
+
+<script>
+  // set theme here to avoid flicker
+  if (
+    localStorage.getItem('color-theme') === 'dark' ||
+    (!('color-theme' in localStorage) &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches)
+  ) {
+    document.documentElement.classList.add('dark');
+  } else {
+    document.documentElement.classList.remove('dark');
+  }
+</script>
