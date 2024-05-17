@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+# [1.3.0] - 2024-05-17
+
+### Added
+- Light/dark theme switcher
+
+### Hugo
+- Support for Hugo v0.126.1
+
+### Go
+- Support for Go v1.22.3
+
 # [1.2.10] - 2024-04-14
 
 ### Changed
@@ -107,7 +118,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [1.0.0] - 2023-11-25
 - Initial release
 
-[unreleased]: https://github.com/Chrede88/qubt/compare/v1.2.10...HEAD
+[unreleased]: https://github.com/Chrede88/qubt/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/Chrede88/qubt/releases/compare/v1.2.10...v1.3.0
 [1.2.10]: https://github.com/Chrede88/qubt/releases/compare/v1.2.9...v1.2.10
 [1.2.9]: https://github.com/Chrede88/qubt/releases/compare/v1.2.8...v1.2.9
 [1.2.8]: https://github.com/Chrede88/qubt/releases/compare/v1.2.7...v1.2.8
