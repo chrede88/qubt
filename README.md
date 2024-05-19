@@ -30,7 +30,7 @@ Qubt is a simple personal blog theme for [Hugo](https://gohugo.io). The theme is
 ## Features
 
 - Simple personal blog theme, designed for mobile-first.
-- Automatic dark mode (based on system setttings).
+- Automatic Dark/light mode based on browser and manual switcher.
 - Emoji support for a fun design.
 - Healthcheck endpoint (/healthcheck.json).
 
