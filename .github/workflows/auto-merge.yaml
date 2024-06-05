@@ -3,6 +3,10 @@ on:
   pull_request_target:
     types: [labeled]
 
+permissions:
+  pull-requests: read
+  contents: write
+
 jobs:
   enable-auto-merge:
     runs-on: ubuntu-latest
