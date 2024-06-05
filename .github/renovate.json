@@ -40,7 +40,7 @@
       "labels": ["type/patch"]
     },
     {
-      "matchBaseBranches": ["main"],
+      "matchFileNames": ["*"],
       "labels": ["auto-merge"]
     }
   ]
