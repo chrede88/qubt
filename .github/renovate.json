@@ -38,6 +38,9 @@
     {
       "matchUpdateTypes": ["patch"],
       "labels": ["type/patch"]
+    },
+    {
+      "labels": ["auto-merge"]
     }
   ]
 }
