@@ -41,7 +41,7 @@
     },
     {
       "matchFileNames": ["*"],
-      "labels": ["auto-merge"]
+      "addLabels": ["auto-merge"]
     }
   ]
 }
