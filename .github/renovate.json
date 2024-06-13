@@ -38,6 +38,10 @@
     {
       "matchUpdateTypes": ["patch"],
       "labels": ["type/patch"]
+    },
+    {
+      "matchFileNames": ["*"],
+      "addLabels": ["auto-merge"]
     }
   ]
 }
