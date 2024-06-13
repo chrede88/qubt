@@ -1,3 +1,5 @@
+ℹ️ This is a version for [my blog](https://4strodev.com)
+
 # Qubt - Simple Personal Blog Hugo Theme
 
 <p align="center">
