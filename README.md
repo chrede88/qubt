@@ -1,4 +1,4 @@
-# Qubt - Simple Personal Blog Hugo Theme
+# Qubt - Simple Personal Blog Hugo Theme 22e
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/chrede88/qubt/main/images/screenshot.png" alt="Qubt - Simple Personal Blog Hugo Theme">
