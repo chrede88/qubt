@@ -11,7 +11,7 @@ jobs:
   enable-auto-merge:
     runs-on: ubuntu-latest
 
-    if: github.event.pull_request.user.login == 'renovate[bot]'
+    if: github.event.pull_request.user.login == 'renovate[bot]' || github.event.pull_request.user.login == 'chrede88'
     steps:
     - uses: pascalgn/automerge-action@v0.16.3
       env:
