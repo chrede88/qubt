@@ -1,6 +1,6 @@
 name: Auto-Merge
 on:
-  pull_request:
+  pull_request_target:
     types: [labeled]
 
 permissions:
@@ -11,10 +11,8 @@ jobs:
   enable-auto-merge:
     runs-on: ubuntu-latest
 
-    if: github.event.pull_request.user.login == 'renovate[bot]' || github.event.pull_request.user.login == 'chrede88'
+    if: github.event.pull_request.user.login == 'renovate[bot]' && contains(github.event.pull_request.labels.*.name, 'auto-merge')
     steps:
-    - uses: pascalgn/automerge-action@v0.16.3
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        MERGE_LABELS: auto-merge
-        MERGE_COMMIT_MESSAGE: "{pullRequest.title} ({pullRequest.number})"
+      - uses: alexwilson/enable-github-automerge-action@2.0.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
