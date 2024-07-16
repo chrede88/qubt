@@ -13,6 +13,15 @@
       <h2 class="mt-4 text-2xl text-slate-500 dark:text-slate-400">
         {{ .Params.subtitle | emojify }}
       </h2>
+
+    <div class="flex flex-wrap space-x-2">
+        {{ range .Params.tags }}
+            <div class="inline-flex items-center px-3 py-1 mt-2 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+                <a href="/tags/{{ . | urlize }}" class="hover:underline">{{ . }}</a>
+            </div>
+        {{ end }}
+    </div>
+
       <div class="mb-4 mt-2 text-sm text-slate-500 dark:text-slate-400">
         {{ $DPT }}
       </div>
