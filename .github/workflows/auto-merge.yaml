@@ -13,6 +13,6 @@ jobs:
 
     if: github.event.pull_request.user.login == 'renovate[bot]' && contains(github.event.pull_request.labels.*.name, 'auto-merge')
     steps:
-    - uses: alexwilson/enable-github-automerge-action@2.0.0
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: alexwilson/enable-github-automerge-action@2.0.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
