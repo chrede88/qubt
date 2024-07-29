@@ -40,7 +40,7 @@
       "labels": ["type/patch"]
     },
     {
-      "matchFileNames": ["*"],
+      "matchFileNames": ["**/*"],
       "addLabels": ["auto-merge"]
     }
   ]
