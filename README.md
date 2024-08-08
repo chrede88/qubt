@@ -7,8 +7,8 @@
 <p align="center">
   <img src="https://img.shields.io/github/v/release/chrede88/qubt?color=blue" alt="Release">
   <img src="https://img.shields.io/badge/min_Hugo-v0.119.0-blue" alt="Hugo version">
-  <img src="https://github.com/Chrede88/qubt/actions/workflows/testBuild.yml/badge.svg" alt="Main Branch Build">
-  <img src="https://github.com/Chrede88/qubt/actions/workflows/buildDeploy.yml/badge.svg" alt="Main Branch Build">
+  <img src="https://github.com/chrede88/qubt/actions/workflows/testBuild.yml/badge.svg" alt="Main Branch Build">
+  <img src="https://github.com/chrede88/qubt/actions/workflows/buildDeploy.yml/badge.svg" alt="Main Branch Build">
 </p>
 <p align="center">
   <img src="https://raw.githubusercontent.com/chrede88/qubt/main/lighthouse/lighthouse_performance.svg" alt="Performace">
@@ -17,7 +17,7 @@
   <img src="https://raw.githubusercontent.com/chrede88/qubt/main/lighthouse/lighthouse_seo.svg" alt="SEO">
 </p>
 
-Qubt is a simple personal blog theme for [Hugo](https://gohugo.io). The theme is designed mobile-first, with a very intuitive interface. Get your Qubt blog up and running quickly by using the [Qubt template](https://github.com/Chrede88/qubtTemplate).
+Qubt is a simple personal blog theme for [Hugo](https://gohugo.io). The theme is designed mobile-first, with a very intuitive interface. Get your Qubt blog up and running quickly by using the [Qubt template](https://github.com/chrede88/qubtTemplate).
 
 ## Screen Dumps
 
@@ -39,7 +39,7 @@ Qubt is a simple personal blog theme for [Hugo](https://gohugo.io). The theme is
 ## Installation
 
 1) Make sure you have Hugo and Go installed on your local machine. Read the instructions [here](https://gohugo.io/installation/).
-2) Follow this link to the theme [template](https://github.com/Chrede88/qubtTemplate).
+2) Follow this link to the theme [template](https://github.com/chrede88/qubtTemplate).
 3) Follow the installation instructions in the template repo. They are listed below for reference.
 
 ### Template installation instructions (Only for reference) 
@@ -140,13 +140,13 @@ Users can provide their own icons by placing a `.svg` image in `./assets/icons/`
 
 ## Update the Theme Version
 
-This guide is left here for reference. Please check the [template](https://github.com/Chrede88/qubtTemplate#readme) repo for the most up-to-date documentation.
+This guide is left here for reference. Please check the [template](https://github.com/chrede88/qubtTemplate#readme) repo for the most up-to-date documentation.
 
 The theme version used to build the site is defined in `go.mod` file.
 
 The best practice is to update to released and tested versions. To update to a specific version execute the following command in a terminal/commandline (at the root path of your site repo):
 
 ```shell
-  hugo mod get github.com/Chrede88/qubt@vX.Y.Z
+  hugo mod get github.com/chrede88/qubt@vX.Y.Z
 ```
 Replace X,Y & Z with the corresponding version numbers. You can find the releases [here](https://github.com/Chrede88/qubt/releases). Please check if any breaking changes are listed under the release you want to update to, before proceeding.
