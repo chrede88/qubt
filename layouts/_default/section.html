@@ -37,7 +37,7 @@
                 <div class="flex items-center -space-x-3">
                   {{ range $authors := .Params.authors }}
                     {{ range $name, $image := $authors }}
-                      {{ $imgPath := resources.GetMatch (print "/**/" $image) }}
+                      {{ $imgPath := resources.GetMatch (print "*" $image) }}
                       {{ with $imgPath }}
                         {{ $imgPath = $imgPath.Filter (images.Process "resize 40x40 webp" ) }}
                         <img class="h-9 w-9 rounded-full border-2 border-slate-50 object-cover object-center" alt="{{ $name }}" src="{{ $imgPath.RelPermalink }}" />
