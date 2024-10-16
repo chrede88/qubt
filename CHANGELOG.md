@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+# [1.3.2] - 2024-10-16
+
+### Fixed
+- Author images are now again shown in the blog preview cards.
+
+### Hugo
+- Bumped to v0.136.1
+
+### Go
+- Bumped to v1.23.2
+
 # [1.3.1] - 2024-05-18
 
 ### Fixed
@@ -123,7 +134,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [1.0.0] - 2023-11-25
 - Initial release
 
-[unreleased]: https://github.com/chrede88/qubt/compare/v1.3.1...HEAD
+[unreleased]: https://github.com/chrede88/qubt/compare/v1.3.2...HEAD
+[1.3.2]: https://github.com/chrede88/qubt/releases/compare/v1.3.1...v1.3.2
 [1.3.1]: https://github.com/chrede88/qubt/releases/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/chrede88/qubt/releases/compare/v1.2.10...v1.3.0
 [1.2.10]: https://github.com/chrede88/qubt/releases/compare/v1.2.9...v1.2.10
