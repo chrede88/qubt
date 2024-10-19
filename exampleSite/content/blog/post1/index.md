@@ -8,17 +8,23 @@ featureimage: photo1.jpeg
 caption: Image caption
 authors:
   - Christian: author.png
+addTOC: true
 ---
+
+## Markdown h2 title
 Use the shortcode "figArray" to add images to your blog post. Add your images to a subfolder. Call the figArray shortcode using the following syntax:
 
 ```
 {{</* figArray subfolder="<subfoldername>" figCaption="Some caption" numCols=2 */>}}
 ```
+### markdown h3 title
 
 Both "figCaption" and "numCols" are optional. The shortcode will try to guess the best number of columns to use for the array of figures if "numCols" is not passed.
 You will need one subfolder containing images per call to the shortcode. The image files need to be one of the following types: png, jpg, jpeg or webp.
 
 {{< figArray subfolder="images" figCaption="A nice figure caption :wave:" >}}
+
+## Markdown subtitle
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id erat enim. Ut cursus magna sed luctus auctor. Sed eu augue dignissim, lobortis ipsum eu, dictum nisi. Integer varius ex maximus quam lobortis accumsan. Morbi mollis vulputate metus, aliquam feugiat arcu porta a. Quisque id justo ultricies, lacinia elit quis, pulvinar odio. Fusce feugiat at velit vitae lobortis. Nulla fringilla metus et sem mattis posuere :zap:.
 
@@ -27,7 +33,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id erat enim. Ut 
 - List item 2
 - List item 3
 
+### Markdown subsubtitle
+
 Cras ligula velit, aliquet ac orci dapibus, molestie ultricies libero. Donec at bibendum est. Phasellus vulputate dapibus quam vel accumsan. Curabitur at felis euismod, lobortis urna id, lobortis dolor. Cras tortor ligula, euismod quis lacus faucibus, condimentum fringilla dolor. Mauris in maximus nisi. Phasellus facilisis lacus quis mi cursus, a ornare mi maximus. Nullam nunc lacus, tincidunt varius risus nec, pellentesque vulputate ligula. Etiam id purus et tortor porta mattis. Donec id sapien nulla. Vivamus at malesuada tellus, id ultricies ante. Maecenas ullamcorper mi massa, at rutrum risus aliquet a. Donec sem tortor, molestie quis ex a, faucibus commodo augue. Morbi convallis sem vel tellus facilisis, et sodales felis consequat. Aliquam ut ante tristique, volutpat lectus vestibulum, egestas sapien.
+
+#### Markdown h4 title
 
 Donec tellus est, faucibus eget ultricies ac, posuere non augue. Fusce ultrices lectus quis nunc lacinia, non tincidunt lectus ultrices. Morbi sodales nisi at felis luctus, eu convallis tortor commodo. Morbi tristique nibh neque, vel tristique dolor laoreet eget. Phasellus felis erat, mattis at suscipit id, faucibus in dolor. In vitae odio at lectus tincidunt dignissim. Fusce risus nisl, hendrerit a ultricies vitae, porta id sapien. Nam elit nunc, hendrerit ut sem quis, ultrices varius leo. Nullam eget lectus in sapien venenatis iaculis at at turpis. Etiam iaculis magna porttitor augue tempus suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam suscipit nibh leo, in pellentesque urna luctus et. Duis diam ipsum, posuere nec tellus sit amet, dignissim feugiat massa. Etiam ut sollicitudin lorem. Quisque commodo libero non mauris viverra malesuada. Morbi vitae auctor felis.
 

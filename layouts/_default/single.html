@@ -3,6 +3,7 @@
   {{ $featuredcaption := .Params.caption }}
   {{ $date := .Date | time.Format ":date_medium" }}
   {{ $DPT := printf "%s - %d minute read" $date .ReadingTime }}
+  {{ $addTOC := .Params.addTOC | default false }}
 
 
   <div class="justify-left mx-auto mt-8 flex max-w-screen-md px-4">
@@ -29,6 +30,38 @@
         </div>
       {{ end }}
 
+      {{ if $addTOC }}
+        <aside class="flex flex-col mt-4 mb-8">
+          <h2 class="text-2xl text-slate-500 dark:text-slate-400 mb-2">
+            Table of Content
+          </h2>
+          <div class="text-lg text-slate-700 dark:text-slate-200">
+            <nav>
+              {{- range .Fragments.Headings }}
+                <ul class="list-[upper-roman] list-inside">
+                  {{- range .Headings }}
+                    <li class="hover:text-slate-600 hover:dark:text-slate-300"><a href="#{{ anchorize .ID }}">{{ .Title }}</a></li>
+                    {{- if .Headings }}
+                      <ul class="list-[lower-alpha] list-inside">
+                        {{- range .Headings }}
+                          <li class="ml-4 hover:text-slate-600 hover:dark:text-slate-300"><a href="#{{ anchorize .ID }}">{{ .Title }}</a></li>
+                          {{- if .Headings }}
+                            <ul class="list-disc list-inside">
+                              {{- range .Headings }}
+                                <li class="ml-8 hover:text-slate-600 hover:dark:text-slate-300"><a href="#{{ anchorize .ID }}">{{ .Title }}</a></li>
+                              {{- end }}
+                            </ul>
+                          {{- end }}
+                        {{- end }}
+                      </ul>
+                    {{- end }}
+                  {{- end }}
+                </ul>
+              {{- end }}
+            </nav>
+          </div>
+        </aside>
+      {{ end }}
 
       <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] md:prose-pre:max-w-screen-md dark:text-slate-200">
         {{ .Content }}
