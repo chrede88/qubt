@@ -3,7 +3,7 @@
   {{ $featuredcaption := .Params.caption }}
   {{ $date := .Date | time.Format ":date_medium" }}
   {{ $DPT := printf "%s - %d minute read" $date .ReadingTime }}
-  {{ $addTOC := .Params.addTOC | default false }}
+  {{ $toc := .Params.toc | default false }}
 
 
   <div class="justify-left mx-auto mt-8 flex max-w-screen-md px-4">
@@ -30,7 +30,7 @@
         </div>
       {{ end }}
 
-      {{ if $addTOC }}
+      {{ if $toc }}
         <aside class="flex flex-col mt-4 mb-8">
           <h2 class="text-2xl text-slate-500 dark:text-slate-400 mb-2">
             Table of Content

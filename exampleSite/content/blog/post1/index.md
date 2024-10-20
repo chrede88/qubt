@@ -8,7 +8,7 @@ featureimage: photo1.jpeg
 caption: Image caption
 authors:
   - Christian: author.png
-addTOC: true
+toc: true
 ---
 
 ## Markdown h2 title
