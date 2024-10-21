@@ -11,7 +11,7 @@ jobs:
   enable-auto-merge:
     runs-on: ubuntu-latest
 
-    if: github.event.pull_request.user.login == 'renovate[bot]' && contains(github.event.pull_request.labels.*.name, 'auto-merge')
+    if: github.event.pull_request.user.login == 'bb-17[bot]' && contains(github.event.pull_request.labels.*.name, 'auto-merge')
     steps:
       - uses: alexwilson/enable-github-automerge-action@2.0.0
         with:
