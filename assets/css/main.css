@@ -1,17 +1,17 @@
-/*! Qubt v1.3.2 | MIT License | https://github.com/Chrede88/qubt */
+/*! Qubt v1.4.0 | MIT License | https://github.com/Chrede88/qubt */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .link {
-  @apply w-10 h-10 m-1 bg-transparent transform hover:scale-125 transition ease-out duration-300;
+  @apply m-1 h-10 w-10 transform bg-transparent transition duration-300 ease-out hover:scale-125;
 }
 
 .link_svg {
-  @apply rounded-full fill-slate-700 dark:fill-slate-50
+  @apply rounded-full fill-slate-700 dark:fill-slate-50;
 }
 
 .toggle-btn {
-  @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
+  @apply [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div]:rotate-[720deg] [&>div]:bg-transparent;
 }

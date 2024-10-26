@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+# [1.4.0] - 2024-10-26
+
+### Added
+- Added support for Table of Content for blog posts.
+  Set `toc: true` in frontmatter to display the Table of Content.
+
+- Added default `ai.txt`. The default is to disallow LLM training on anything.
+  Change this by adding a `./static/ai.txt` file to your repo.
+
+### Hugo
+- Bumped to v0.136.5
+
 # [1.3.2] - 2024-10-16
 
 ### Fixed
@@ -134,7 +146,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [1.0.0] - 2023-11-25
 - Initial release
 
-[unreleased]: https://github.com/chrede88/qubt/compare/v1.3.2...HEAD
+[unreleased]: https://github.com/chrede88/qubt/compare/v1.4.0...HEAD
+[1.4.0]: https://github.com/chrede88/qubt/releases/compare/v1.3.2...v1.4.0
 [1.3.2]: https://github.com/chrede88/qubt/releases/compare/v1.3.1...v1.3.2
 [1.3.1]: https://github.com/chrede88/qubt/releases/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/chrede88/qubt/releases/compare/v1.2.10...v1.3.0

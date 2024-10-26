@@ -1,4 +1,4 @@
-/*! Qubt v1.3.2 | MIT License | https://github.com/Chrede88/qubt */
+/*! Qubt v1.4.0 | MIT License | https://github.com/Chrede88/qubt */
 
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -1891,11 +1891,6 @@ video {
     color: rgb(99 102 241 / var(--tw-text-opacity));
   }
 
-  .hover\:text-slate-600:hover {
-    --tw-text-opacity: 1;
-    color: rgb(71 85 105 / var(--tw-text-opacity));
-  }
-
   .hover\:text-slate-500:hover {
     --tw-text-opacity: 1;
     color: rgb(100 116 139 / var(--tw-text-opacity));
@@ -1967,11 +1962,6 @@ video {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .hover\:dark\:text-slate-300:is(.dark *):hover {
-    --tw-text-opacity: 1;
-    color: rgb(203 213 225 / var(--tw-text-opacity));
-  }
-
   .hover\:dark\:text-slate-400:is(.dark *):hover {
     --tw-text-opacity: 1;
     color: rgb(148 163 184 / var(--tw-text-opacity));
