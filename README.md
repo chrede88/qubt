@@ -42,7 +42,7 @@ Qubt is a simple personal blog theme for [Hugo](https://gohugo.io). The theme is
 2) Follow this link to the theme [template](https://github.com/chrede88/qubtTemplate).
 3) Follow the installation instructions in the template repo. They are listed below for reference.
 
-### Template installation instructions (Only for reference) 
+### Template installation instructions (Only for reference)
 1) Use this template by pressing `Use this template`.
 2) Clone your version of the template to your local computer:
 ```shell
@@ -102,7 +102,7 @@ author:
 links:
   - github: https://github.com/username
   - facebook: https://facebook.com/me
- 
+
 
 ###############################
 ## OpenGraph & Twitter Cards
@@ -119,18 +119,19 @@ Links are defined by the name (i.e. "github" or "facebook"). The names must matc
 ### Supported Social Icons
 | **Supported Icons** | **Supported Icons** | **Supported Icons** | **Supported Icons** |
 | --- | --- | --- | --- |
-| amazon | apple | bandcamp | bitbucket | 
+| amazon | apple | bandcamp | bitbucket |
 | bluesky | check-mark | codepen | dev |
 | discord | dribbble | email | etsy |
 | facebook | flickr | foursquare | github |
 | gitlab | google | instagram | keybase |
 | kickstarter | link | linkedin | mastodon |
-| medium | orcid | patreon | paypal | pinterest |
-| reddit | signal | skype | slack |
-| snapchat | soundcloud | spotify | stack-exchange |
-| stack-overflow | strava | telegram | tiktok |
-| tumblr | twitch | untappd | website |
-| whatsapp | windows | x-twitter | youtube |
+| medium | orcid | patreon | paypal |
+| pgp-key | pinterest | reddit | signal |
+| skype | slack | snapchat | soundcloud |
+| spotify | stack-exchange | stack-overflow | strava |
+| telegram | tiktok | tumblr | twitch |
+| untappd | website | whatsapp | windows |
+| x-twitter | youtube |
 
 
 ### Custom Social Icons

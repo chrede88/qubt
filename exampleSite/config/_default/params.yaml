@@ -59,7 +59,8 @@ links:
   # - apple: 
   # - amazon: 
   # - google: 
-  # - paypal: 
+  # - paypal:
+  # - pgp-key: 
   # - windows: 
 
 ###############################
