@@ -44,6 +44,6 @@ Qubt is a simple personal blog theme for [Hugo](https://gohugo.io). The theme is
 
 ---
 
-## Configuration
+## Wiki
 
-See the [wiki](https://github.com/chrede88/qubt/wiki) for all info about configuration.
+See the [wiki](https://github.com/chrede88/qubt/wiki) for all info about configuration, how to update to the newest theme version and how to easily deploy to Github Pages.
