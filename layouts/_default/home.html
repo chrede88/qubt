@@ -22,6 +22,12 @@
         {{ $name | markdownify | emojify }}
       </h1>
 
+      <h1 class="text-center text-4xl font-extrabold text-slate-700 dark:text-slate-200">
+        {{ $name | markdownify | emojify }}
+      </h1>
+
+
+
       {{ with .Site.Params.Author.greeting }}
         <h2 class="mt-4 text-center text-xl text-slate-600 dark:text-slate-400">
           {{ . | markdownify | emojify }}
