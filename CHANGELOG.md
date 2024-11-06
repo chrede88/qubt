@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+# [1.5.0] - 2024-11-06
+
+### Added
+- Added icons for `ssh-key` and `certificates`.
+
+### Hugo
+- Bumped to v0.138.0
+
 # [1.4.0] - 2024-10-26
 
 ### Added
