@@ -15,7 +15,7 @@
   <div class="flex flex-row space-x-8">
     <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
       {{ range site.Menus.main }}
-        <a href="{{ .URL }}" class="px-3 py-2 text-slate-700 hover:text-indigo-500 md:p-0 dark:text-slate-400">
+        <a href="{{ .URL }}" class="px-3 py-2 text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
           {{ .Name }}
         </a>
       {{ end }}
@@ -40,7 +40,7 @@
 <section id="mobile-menu" class="absolute hidden w-full origin-top animate-open-menu flex-col justify-center bg-neutral-100 text-4xl dark:bg-neutral-800">
   <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
     {{ range site.Menus.main }}
-      <a href="{{ .URL }}" class="px-3 py-2 text-center text-slate-700 hover:text-indigo-500 md:p-0 dark:text-slate-400">
+      <a href="{{ .URL }}" class="px-3 py-2 text-center text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
         {{ .Name }}
       </a>
     {{ end }}

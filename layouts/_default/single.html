@@ -31,22 +31,20 @@
       {{ end }}
 
       {{ if $toc }}
-        <aside class="flex flex-col mt-4 mb-8">
-          <h2 class="text-2xl text-slate-500 dark:text-slate-400 mb-2">
-            Table of Content
-          </h2>
-          <div class="text-lg underline text-slate-700 dark:text-slate-200">
+        <aside class="mb-8 mt-4 flex flex-col">
+          <h2 class="mb-2 text-2xl text-slate-500 dark:text-slate-400">Table of Content</h2>
+          <div class="text-lg text-slate-700 underline dark:text-slate-200">
             <nav>
               {{- range .Fragments.Headings }}
-                <ul class="list-[upper-roman] list-inside">
+                <ul class="list-inside list-[upper-roman]">
                   {{- range .Headings }}
                     <li class="hover:text-slate-500 hover:dark:text-slate-400"><a href="#{{ anchorize .ID }}">{{ .Title }}</a></li>
                     {{- if .Headings }}
-                      <ul class="list-[lower-alpha] list-inside">
+                      <ul class="list-inside list-[lower-alpha]">
                         {{- range .Headings }}
                           <li class="ml-4 hover:text-slate-500 hover:dark:text-slate-400"><a href="#{{ anchorize .ID }}">{{ .Title }}</a></li>
                           {{- if .Headings }}
-                            <ul class="list-disc list-inside">
+                            <ul class="list-inside list-disc">
                               {{- range .Headings }}
                                 <li class="ml-8 hover:text-slate-500 hover:dark:text-slate-400"><a href="#{{ anchorize .ID }}">{{ .Title }}</a></li>
                               {{- end }}
@@ -63,7 +61,8 @@
         </aside>
       {{ end }}
 
-      <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] md:prose-pre:max-w-screen-md dark:text-slate-200">
+
+      <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] dark:text-slate-200 md:prose-pre:max-w-screen-md">
         {{ .Content }}
       </span>
     </article>
