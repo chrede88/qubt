@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   enable-auto-merge:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     if: github.event.pull_request.user.login == 'bb-17[bot]' && contains(github.event.pull_request.labels.*.name, 'auto-merge')
     steps:
