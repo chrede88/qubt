@@ -1,8 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended"
-  ],
+  "extends": ["config:recommended"],
   "dependencyDashboardTitle": "Renovate Dashboard 🤖",
   "commitMessagePrefix": "🤖",
   "commitMessageTopic": "{{depName}}",
@@ -27,6 +25,10 @@
       "matchManagers": ["gomod"],
       "matchDepTypes": ["indirect"],
       "enabled": true
+    },
+    {
+      "matchDatasources": ["golang-version"],
+      "rangeStrategy": "bump"
     },
     {
       "matchUpdateTypes": ["major"],
