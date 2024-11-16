@@ -2,14 +2,20 @@
 ## CHANGE THESE
 ############################
 
-baseURL: 'https://chrede88.github.io/qubt'
-title: 'Qubt Theme'
+baseURL: "https://chrede88.github.io/qubt"
+title: "Qubt Theme"
 
 ############################
 ## MISC
 ############################
 
 enableEmoji: true
-disableKinds: ['taxonomy', 'term']
-languageCode: 'en-us'
+disableKinds: ["taxonomy", "term"]
+languageCode: "en-us"
 enableRobotsTXT: true
+
+markup:
+  goldmark:
+    renderHooks:
+      image:
+        enableDefault: true
