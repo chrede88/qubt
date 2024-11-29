@@ -1,9 +1,13 @@
 <div class="flex flex-col justify-center p-10">
   {{/* Copyright */}}
   <p class="text-center text-slate-700 dark:text-slate-400">
-    &copy;
-    {{ now.Format "2006" }}
-    {{ .Site.Params.Author.name | markdownify | emojify }}
+    {{ with .Site.Copyright }}
+      {{ . | markdownify | emojify }}
+    {{ else }}
+      &copy;
+      {{ now.Format "2006" }}
+      {{ .Site.Params.Author.name | markdownify | emojify }}
+    {{ end }}
   </p>
 
   {{/* Powered by */}}
