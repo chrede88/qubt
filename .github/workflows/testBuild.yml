@@ -4,10 +4,10 @@ on:
   push:
     branches:
       - main
-  pull_request:
+  pull_request_target:
 
 jobs:
-  build-deploy: 
+  build-deploy:
     name: Test Build exampleSite
     runs-on: ubuntu-24.04
     concurrency:
@@ -23,15 +23,15 @@ jobs:
         uses: actions/setup-go@v5
         with:
           # renovate: datasource=github-tags depName=golang/go
-          go-version: '1.23.3'
+          go-version: "1.23.3"
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           # renovate: datasource=github-releases depName=gohugoio/hugo
-          hugo-version: '0.139.2'
+          hugo-version: "0.139.2"
           extended: true
-          
+
       - name: Build
         working-directory: ./exampleSite
         run: hugo --minify --themesDir ../.. --baseURL https://chrede88.github.io/qubt/
