@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+# [1.6.0] - 2024-11-30
+
+### Added
+- Added posibility to set `site.Copyright` in configuration. ([#187](https://github.com/chrede88/qubt/pull/187))
+
+### Fixed
+- Changed the assets fingerprint to sha256. Fixes a filename issue on Linux. ([#186](https://github.com/chrede88/qubt/pull/186))
+
+### Hugo
+- Bumped to v0.139.3
+
 # [1.5.0] - 2024-11-06
 
 ### Added
