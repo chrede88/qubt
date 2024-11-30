@@ -38,7 +38,7 @@ Qubt is a simple personal blog theme for [Hugo](https://gohugo.io). The theme is
 
 ## Installation
 
-1) Make sure you have Hugo and Go installed on your local machine. Read the instructions [here](https://gohugo.io/installation/).
+1) Make sure you have **Hugo Extended Edition 0.119.0 or later** and **Go 1.23.3 or later** installed on your local machine. Read the instructions [here](https://gohugo.io/installation/).
 2) Follow this link to the theme [template](https://github.com/chrede88/qubtTemplate).
 3) Follow the installation instructions in the template repo.
 
