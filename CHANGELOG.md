@@ -6,6 +6,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+# [2.0.0] - 2024-12-07
+
+## Breaking Change
+- Bumping minimum hugo version to v0.122.0 extended
+
+### Added
+- Added support for Latex rendering
+  Use it by setting the following in the frontmatter of the page where it's needed:
+  ```yaml
+  params:
+    math: true
+  ```
+### Go
+- Bumped to v1.23.3
+
 # [1.6.0] - 2024-11-30
 
 ### Added
@@ -165,7 +180,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [1.0.0] - 2023-11-25
 - Initial release
 
-[unreleased]: https://github.com/chrede88/qubt/compare/v1.6.0...HEAD
+[unreleased]: https://github.com/chrede88/qubt/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/chrede88/qubt/releases/compare/v1.6.0...v2.0.0
 [1.6.0]: https://github.com/chrede88/qubt/releases/compare/v1.5.0...v1.6.0
 [1.5.0]: https://github.com/chrede88/qubt/releases/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/chrede88/qubt/releases/compare/v1.3.2...v1.4.0
