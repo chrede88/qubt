@@ -9,6 +9,10 @@ caption: Image caption
 authors:
   - Christian: author.png
 toc: true
+
+# enable Latex rendering
+params:
+  math: true
 ---
 
 ## Markdown h2 title
@@ -23,6 +27,15 @@ Both "figCaption" and "numCols" are optional. The shortcode will try to guess th
 You will need one subfolder containing images per call to the shortcode. The image files need to be one of the following types: png, jpg, jpeg or webp.
 
 {{< figArray subfolder="images" figCaption="A nice figure caption :wave:" >}}
+
+## Latex rendering
+
+$$
+\begin{aligned}
+KL(\hat{y} || y) &= \sum_{c=1}^{M}\hat{y}_c \log{\frac{\hat{y}_c}{y_c}} \\
+JS(\hat{y} || y) &= \frac{1}{2}(KL(y||\frac{y+\hat{y}}{2}) + KL(\hat{y}||\frac{y+\hat{y}}{2}))
+\end{aligned}
+$$
 
 ## Markdown subtitle
 

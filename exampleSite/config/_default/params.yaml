@@ -3,10 +3,10 @@
 ############################
 
 author:
-  name: "Qubt"
+  name: 'Qubt'
   image: author.png
-  greeting: "A personal blog theme for Hugo :evergreen_tree:"
-  icon: ":wave:"
+  greeting: 'A personal blog theme for Hugo :evergreen_tree:'
+  icon: ':wave:'
 
 ############################
 ## Links
@@ -14,60 +14,74 @@ author:
 
 links:
   - github: https://github.com/chrede88/qubt
-  # - gitlab: 
+  # - gitlab:
   - facebook: https://github.com/chrede88/qubt
   # - x-twitter:
   # - mastodon:
   - linkedin: https://github.com/chrede88/qubt
   - instagram: https://github.com/chrede88/L1nkr
-  # - reddit: 
-  # - telegram: 
-  # - whatsapp: 
-  # - signal: 
-  # - codepen: 
-  # - dev: 
+  # - reddit:
+  # - telegram:
+  # - whatsapp:
+  # - signal:
+  # - codepen:
+  # - dev:
   - email: https://github.com/chrede88/qubt
   - website: https://github.com/chrede88/qubt
-  # - link: 
+  # - link:
   # - discord:
   # - orcid:
   # - slack:
-  # - stack-overflow: 
-  # - twitch: 
-  # - patreon: 
+  # - stack-overflow:
+  # - twitch:
+  # - patreon:
   # - soundcloud:
-  # - dribbble: 
-  # - stack-exchange: 
-  # - tiktok: 
+  # - dribbble:
+  # - stack-exchange:
+  # - tiktok:
   # - youtube:
-  # - keybase: 
-  # - flickr: 
+  # - keybase:
+  # - flickr:
   # - tumblr:
-  # - kickstarter: 
+  # - kickstarter:
   # - snapchat:
-  # - bluesky: 
+  # - bluesky:
   # - bitbucket:
-  # - bandcamp: 
-  # - etsy: 
-  # - spotify: 
-  # - pinterest: 
-  # - strava: 
-  # - untappd: 
-  # - skype: 
-  # - medium: 
-  # - foursquare: 
-  # - apple: 
-  # - amazon: 
-  # - google: 
+  # - bandcamp:
+  # - etsy:
+  # - spotify:
+  # - pinterest:
+  # - strava:
+  # - untappd:
+  # - skype:
+  # - medium:
+  # - foursquare:
+  # - apple:
+  # - amazon:
+  # - google:
   # - paypal:
-  # - pgp-key: 
-  # - windows: 
+  # - pgp-key:
+  # - windows:
 
 ###############################
 ## OpenGraph & Twitter Cards
 ###############################
 
-title: "Qubt Theme"
-description: "Demo site build with Qubt & Hugo"
+title: 'Qubt Theme'
+description: 'Demo site build with Qubt & Hugo'
 images:
   - thumbnail.png
+
+###############################
+## Latex math
+###############################
+
+# To configure Latex rendering on all pages, change to: true
+#
+# To only add Latex rendering on pages that need it, set in the frontmatter
+# of each page that needs it:
+#   params:
+#     math: true
+# This option will allow better performance, as it'll only load
+# the extra JS when needed.
+math: false

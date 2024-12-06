@@ -6,7 +6,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/github/v/release/chrede88/qubt?color=blue" alt="Release">
-  <img src="https://img.shields.io/badge/min_Hugo-v0.119.0 extended-blue" alt="Hugo version">
+  <img src="https://img.shields.io/badge/min_Hugo-v0.122.0 extended-blue" alt="Hugo version">
   <img src="https://github.com/chrede88/qubt/actions/workflows/testBuild.yml/badge.svg" alt="Main Branch Build">
   <img src="https://github.com/chrede88/qubt/actions/workflows/buildDeploy.yml/badge.svg" alt="Main Branch Build">
 </p>

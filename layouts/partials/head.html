@@ -42,6 +42,11 @@
 {{ $bundleJS := $assets.Get "js" | resources.Concat "js/main.bundle.js" | resources.Minify | resources.Fingerprint "sha256" }}
 <script defer src="{{ $bundleJS.RelPermalink }}" integrity="{{ $bundleJS.Data.Integrity }}"></script>
 
+{{/* Load Latex JS if needed */}}
+{{ if .Param "math" }}
+    {{ partialCached "math.html" . }}
+{{ end }}
+
 {{/* Favicon */}}
 {{ $icon := resources.GetMatch "icon.*" }}
 {{ with $icon }}
