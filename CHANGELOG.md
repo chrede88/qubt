@@ -9,7 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 # [2.0.0] - 2024-12-07
 
 ## Breaking Change
-- Bumping minimum hugo version to v0.122.0 extended
+- Bumping minimum hugo version to `v0.122.0 extended`.
 
 ### Added
 - Added support for Latex rendering
@@ -18,6 +18,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   params:
     math: true
   ```
+  Add the following to your `hugo.yaml` config in order to get the nessecary markup config for Latex rendering and inline images:
+  ```yaml
+  markup:
+    _merge: deep
+  ```
+
 ### Go
 - Bumped to v1.23.3
 
