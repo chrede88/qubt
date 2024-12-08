@@ -5,4 +5,4 @@
 ############################
 
 imports:
-  - path: github.com/chrede88/qubt
+  - path: github.com/chrede88/qubt/v2
