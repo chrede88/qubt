@@ -1909,6 +1909,16 @@ video {
   }
 }
 
+.prose-code\:before\:hidden :is(:where(code):not(:where([class~="not-prose"],[class~="not-prose"] *)))::before {
+  content: var(--tw-content);
+  display: none;
+}
+
+.prose-code\:after\:hidden :is(:where(code):not(:where([class~="not-prose"],[class~="not-prose"] *)))::after {
+  content: var(--tw-content);
+  display: none;
+}
+
 .prose-pre\:max-w-\[90vw\] :is(:where(pre):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   max-width: 90vw;
 }
