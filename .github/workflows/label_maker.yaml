@@ -1,9 +1,9 @@
-name: "Labeler"
+name: 'Labeler'
 
 on:
   workflow_dispatch:
   pull_request:
-    branches: ["main"]
+    branches: ['main']
 
 permissions:
   contents: read

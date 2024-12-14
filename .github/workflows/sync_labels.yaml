@@ -1,7 +1,7 @@
 name: Sync labels
 on:
   push:
-    paths: [".github/labels.yaml"]
+    paths: ['.github/labels.yaml']
   workflow_dispatch:
 
 permissions:
@@ -16,7 +16,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
 
-      - name:
+      - name: sync labels
         uses: EndBug/label-sync@v2
         with:
           config-file: .github/labels.yaml
