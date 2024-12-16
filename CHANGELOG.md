@@ -11,19 +11,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## Breaking Change (from v2.0.0)
 - Bumping minimum hugo version to `v0.122.0 extended`.
 
-### Added
-- Added support for Latex rendering
-  Use it by setting the following in the frontmatter of the page where it's needed:
-  ```yaml
-  params:
-    math: true
-  ```
-  Add the following to your `hugo.yaml` config in order to get the nessecary markup config for Latex rendering and inline images:
-  ```yaml
-  markup:
-    _merge: deep
-  ```
-
 ### Fixed
 - Fixed an issue where inline code blocks would be rendered with quotes.
 
