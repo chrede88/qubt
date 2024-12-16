@@ -16,7 +16,7 @@ params:
 ---
 
 ## Markdown h2 title
-Use the shortcode "figArray" to add images to your blog post. Add your images to a subfolder. Call the figArray shortcode using the following syntax:
+Use the shortcode `figArray` to add images to your blog post. Add your images to a subfolder. Call the figArray shortcode using the following syntax:
 
 ```
 {{</* figArray subfolder="<subfoldername>" figCaption="Some caption" numCols=2 */>}}
