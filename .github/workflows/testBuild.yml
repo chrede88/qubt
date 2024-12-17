@@ -5,6 +5,11 @@ on:
     branches:
       - main
   pull_request_target:
+    paths:
+      - layouts/**
+      - assets/**
+      - static/**
+  pull_request:
 
 jobs:
   build-deploy:
