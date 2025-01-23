@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <div class="mx-auto mb-2 mt-12 flex max-w-screen-xl flex-col items-center justify-center">
+  <div class="mx-auto mb-2 mt-12 flex max-w-(--breakpoint-xl) flex-col items-center justify-center">
     {{/* Add image and title */}}
     {{ $image := resources.GetMatch (print "**" .Site.Params.Author.image) }}
     {{ $name := .Params.name | default .Site.Params.Author.name }}
@@ -44,11 +44,11 @@
     </div>
   </div>
 
-  <div class="justify-left mx-auto mt-8 flex max-w-screen-lg px-4">
+  <div class="justify-left mx-auto mt-8 flex max-w-(--breakpoint-lg) px-4">
     <article>
       {{ if .Params.bio }}
         <h1 class="mb-4 text-4xl font-extrabold text-slate-700 dark:text-slate-200">Biography</h1>
-        <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] dark:text-slate-200 md:prose-pre:max-w-screen-md prose-code:before:hidden prose-code:after:hidden">
+        <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] dark:text-slate-200 md:prose-pre:max-w-(--breakpoint-md) prose-code:before:hidden prose-code:after:hidden">
           {{ .Content }}
         </span>
       {{ end }}
