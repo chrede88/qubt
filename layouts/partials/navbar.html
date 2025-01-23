@@ -2,7 +2,7 @@
 {{ $logo := resources.GetMatch "logo.*" }}
 
 
-<section class="mx-auto flex max-w-screen-xl items-center justify-between p-4">
+<section class="mx-auto flex max-w-(--breakpoint-xl) items-center justify-between p-4">
   <a href="{{ .Site.BaseURL }}" class="flex items-center space-x-3">
     {{ with $logo }}
       {{ $logo = $logo.Filter (images.Process "resize 120x120 webp") }}
@@ -33,7 +33,7 @@
     </button>
     <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden" aria-label="hamburger-button">
       <div
-        class="absolute top-4 -mt-0.5 h-[3px] w-8 rounded bg-slate-700 transition-all duration-500 before:absolute before:h-[3px] before:w-8 before:-translate-x-4 before:-translate-y-2.5 before:rounded before:bg-slate-700 before:transition-all before:duration-500 before:content-[''] after:absolute after:h-[3px] after:w-8 after:-translate-x-4 after:translate-y-2.5 after:rounded after:bg-slate-700 after:transition-all after:duration-500 after:content-[''] dark:bg-slate-400 before:dark:bg-slate-400 after:dark:bg-slate-400"></div>
+        class="absolute top-4 -mt-0.5 h-[3px] w-8 rounded-sm bg-slate-700 transition-all duration-500 before:absolute before:h-[3px] before:w-8 before:-translate-x-4 before:-translate-y-2.5 before:rounded-sm before:bg-slate-700 before:transition-all before:duration-500 before:content-[''] after:absolute after:h-[3px] after:w-8 after:-translate-x-4 after:translate-y-2.5 after:rounded-sm after:bg-slate-700 after:transition-all after:duration-500 after:content-[''] dark:bg-slate-400 dark:before:bg-slate-400 dark:after:bg-slate-400"></div>
     </button>
   </div>
 </section>

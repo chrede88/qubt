@@ -6,7 +6,7 @@
   {{ $toc := .Params.toc | default false }}
 
 
-  <div class="justify-left mx-auto mt-8 flex max-w-screen-md px-4">
+  <div class="justify-left mx-auto mt-8 flex max-w-(--breakpoint-md) px-4">
     <article>
       <h1 class="text-4xl font-extrabold text-slate-700 dark:text-slate-200">
         {{ .Title | emojify }}
@@ -38,15 +38,15 @@
               {{- range .Fragments.Headings }}
                 <ul class="list-inside list-[upper-roman]">
                   {{- range .Headings }}
-                    <li class="hover:text-slate-500 hover:dark:text-slate-400"><a href="#{{ anchorize .ID }}">{{ .Title }}</a></li>
+                    <li class="hover:text-slate-500 dark:hover:text-slate-400"><a href="#{{ anchorize .ID }}">{{ .Title }}</a></li>
                     {{- if .Headings }}
                       <ul class="list-inside list-[lower-alpha]">
                         {{- range .Headings }}
-                          <li class="ml-4 hover:text-slate-500 hover:dark:text-slate-400"><a href="#{{ anchorize .ID }}">{{ .Title }}</a></li>
+                          <li class="ml-4 hover:text-slate-500 dark:hover:text-slate-400"><a href="#{{ anchorize .ID }}">{{ .Title }}</a></li>
                           {{- if .Headings }}
                             <ul class="list-inside list-disc">
                               {{- range .Headings }}
-                                <li class="ml-8 hover:text-slate-500 hover:dark:text-slate-400"><a href="#{{ anchorize .ID }}">{{ .Title }}</a></li>
+                                <li class="ml-8 hover:text-slate-500 dark:hover:text-slate-400"><a href="#{{ anchorize .ID }}">{{ .Title }}</a></li>
                               {{- end }}
                             </ul>
                           {{- end }}
@@ -62,7 +62,7 @@
       {{ end }}
 
 
-      <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] dark:text-slate-200 md:prose-pre:max-w-screen-md prose-code:before:hidden prose-code:after:hidden">
+      <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] dark:text-slate-200 md:prose-pre:max-w-(--breakpoint-md) prose-code:before:hidden prose-code:after:hidden">
         {{ .Content }}
       </span>
     </article>

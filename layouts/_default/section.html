@@ -1,6 +1,6 @@
 {{ define "main" }}
   {{/* Title */}}
-  <div class="justify-left mx-auto mt-8 flex max-w-screen-xl px-4">
+  <div class="justify-left mx-auto mt-8 flex max-w-(--breakpoint-xl) px-4">
     <article>
       <h1 class="text-4xl font-extrabold text-slate-700 dark:text-slate-200">
         {{ .Title | emojify }}
@@ -12,7 +12,7 @@
   </div>
 
   {{/* Grid of blog posts */}}
-  <div class="mx-auto max-w-screen-xl">
+  <div class="mx-auto max-w-(--breakpoint-xl)">
     <div class="mt-8 grid grid-flow-row grid-cols-1 justify-items-center gap-8 px-4 lg:grid-cols-2">
       {{ range .Pages.ByDate.Reverse }}
         {{ $cardimage := resources.GetMatch (print "**" .Params.cardimage) }}
