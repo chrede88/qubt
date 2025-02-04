@@ -18,7 +18,7 @@ params:
 ## Markdown h2 title
 Use the shortcode `figArray` to add images to your blog post. Add your images to a subfolder. Call the figArray shortcode using the following syntax:
 
-```
+```go
 {{</* figArray subfolder="<subfoldername>" figCaption="Some caption" numCols=2 */>}}
 ```
 ### markdown h3 title
@@ -26,7 +26,7 @@ Use the shortcode `figArray` to add images to your blog post. Add your images to
 Both "figCaption" and "numCols" are optional. The shortcode will try to guess the best number of columns to use for the array of figures if "numCols" is not passed.
 You will need one subfolder containing images per call to the shortcode. The image files need to be one of the following types: png, jpg, jpeg or webp.
 
-{{< figArray subfolder="images" figCaption="A nice figure caption :wave:" >}}
+{{< figArray subfolder="images" numCols=3 figCaption="A nice figure caption :wave:" >}}
 
 ## Latex rendering
 
@@ -55,3 +55,14 @@ Cras ligula velit, aliquet ac orci dapibus, molestie ultricies libero. Donec at 
 Donec tellus est, faucibus eget ultricies ac, posuere non augue. Fusce ultrices lectus quis nunc lacinia, non tincidunt lectus ultrices. Morbi sodales nisi at felis luctus, eu convallis tortor commodo. Morbi tristique nibh neque, vel tristique dolor laoreet eget. Phasellus felis erat, mattis at suscipit id, faucibus in dolor. In vitae odio at lectus tincidunt dignissim. Fusce risus nisl, hendrerit a ultricies vitae, porta id sapien. Nam elit nunc, hendrerit ut sem quis, ultrices varius leo. Nullam eget lectus in sapien venenatis iaculis at at turpis. Etiam iaculis magna porttitor augue tempus suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam suscipit nibh leo, in pellentesque urna luctus et. Duis diam ipsum, posuere nec tellus sit amet, dignissim feugiat massa. Etiam ut sollicitudin lorem. Quisque commodo libero non mauris viverra malesuada. Morbi vitae auctor felis.
 
 Maecenas ac dignissim dolor. Sed vitae nisl vel ante rutrum tincidunt ac et diam. Integer id dignissim quam. Vestibulum quis enim sit amet tellus tincidunt sagittis ut vitae nunc. Sed hendrerit, quam ut fermentum imperdiet, augue purus cursus felis, in ultricies elit mauris in risus. Morbi hendrerit imperdiet vehicula. Etiam porttitor magna eu quam laoreet ullamcorper. Etiam a erat ante. Curabitur pharetra, lacus in porttitor cursus, libero lacus consectetur dui, sit amet auctor tellus magna et enim. Pellentesque tristique molestie fringilla. Vivamus sit amet tincidunt quam. Morbi eu nisi quam. Nunc ultrices vel sem sit amet aliquam.
+
+## Code blocks
+
+Let's try to add some code blocks:
+
+```yaml
+key: value
+key1:
+  - name: bla
+    type: blabla
+```

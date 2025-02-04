@@ -46,7 +46,7 @@ markup:
         enable: true
   highlight:
     codeFences: true
-    noHl: false
-    lineNumbersInTable: false
-    noClasses: false
-    guessSyntax: true
+    lineNumbersInTable: true
+    noClasses: true
+    tabWidth: 2
+    lineNos: true
