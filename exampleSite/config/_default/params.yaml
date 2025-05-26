@@ -62,6 +62,10 @@ links:
   # - paypal:
   # - pgp-key:
   # - windows:
+  # - codeberg:
+  # - pixelfed:
+  # - substack:
+  # - newsletter:
 
 ###############################
 ## OpenGraph & Twitter Cards
