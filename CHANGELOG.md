@@ -6,6 +6,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+# [2.1.0] - 2025-05-26
+
+### Icons
+Adding new icon:
+- codeberg
+- newsletter
+- pixelfed
+- substack
+
+### Hugo
+- Bump to v0.147.5
+
+### Go
+- Bumped to v1.24.3
+
 # [2.0.1] - 2024-12-16
 
 ## Breaking Change (from v2.0.0)
@@ -200,7 +215,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [1.0.0] - 2023-11-25
 - Initial release
 
-[unreleased]: https://github.com/chrede88/qubt/compare/v2.0.1...HEAD
+[unreleased]: https://github.com/chrede88/qubt/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/chrede88/qubt/releases/compare/v2.0.1...v2.1.0
 [2.0.1]: https://github.com/chrede88/qubt/releases/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/chrede88/qubt/releases/compare/v1.6.0...v2.0.0
 [1.6.0]: https://github.com/chrede88/qubt/releases/compare/v1.5.0...v1.6.0

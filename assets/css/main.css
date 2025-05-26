@@ -1,6 +1,6 @@
-/*! Qubt v2.0.1 | MIT License | https://github.com/Chrede88/qubt */
+/*! Qubt v2.1.0 | MIT License | https://github.com/Chrede88/qubt */
 
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @config '../../tailwind.config.js';
 
@@ -31,5 +31,5 @@
 }
 
 .toggle-btn {
-  @apply [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div]:rotate-[720deg] [&>div]:bg-transparent;
+  @apply [&>div]:rotate-[720deg] [&>div]:bg-transparent [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div::before]:translate-y-0 [&>div::before]:rotate-45;
 }
