@@ -32,7 +32,7 @@
     "@tailwindcss/typography": "0.5.16",
     "prettier": "3.5.3",
     "prettier-plugin-go-template": "0.0.15",
-    "prettier-plugin-tailwindcss": "0.6.11",
+    "prettier-plugin-tailwindcss": "0.6.12",
     "tailwindcss": "4.1.8"
   }
 }
