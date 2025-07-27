@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '0 * * * *' # Every hour
+    - cron: '2 * * * *' # Every hour (2min past the hour)
   push:
     branches: ['main']
     paths:
