@@ -14,10 +14,10 @@ jobs:
 
     steps:
       - name: checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v5.0.0
 
       - name: sync labels
-        uses: EndBug/label-sync@v2
+        uses: EndBug/label-sync@v2.3.3
         with:
           config-file: .github/labels.yaml
           delete-other-labels: true
