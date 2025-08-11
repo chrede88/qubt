@@ -55,7 +55,7 @@ jobs:
         run: hugo --minify --themesDir ../.. --baseURL https://chrede88.github.io/qubt/
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v3.0.1
         with:
           path: ./exampleSite/public
 
