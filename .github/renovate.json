@@ -45,6 +45,17 @@
     {
       "matchFileNames": ["**/*"],
       "addLabels": ["auto-merge"]
+    },
+    {
+      "description": ["Gp Group"],
+      "groupName": "Go",
+      "matchPackageNames": ["/go/"],
+      "matchDatasources": ["docker"],
+      "group": {
+        "commitMessageTopic": "{{{groupName}}} group"
+      },
+      "separateMinorPatch": true,
+      "minimumGroupSize": 2
     }
   ]
 }
