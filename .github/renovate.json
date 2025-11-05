@@ -47,10 +47,10 @@
       "addLabels": ["auto-merge"]
     },
     {
-      "description": ["Gp Group"],
+      "description": ["Go Group"],
       "groupName": "Go",
-      "matchPackageNames": ["/go/"],
-      "matchDatasources": ["docker"],
+      "matchPackageNames": ["/go/", "/golang/"],
+      "matchDatasources": ["github-tags", "golang-version"],
       "group": {
         "commitMessageTopic": "{{{groupName}}} group"
       },
