@@ -28,7 +28,7 @@ jobs:
         uses: actions/setup-go@v6.2.0
         with:
           # renovate: datasource=github-tags depName=golang/go
-          go-version: '1.25.5'
+          go-version: '1.25.6'
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3.0.0
