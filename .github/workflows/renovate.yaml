@@ -31,6 +31,7 @@ jobs:
   renovate:
     name: Renovate
     runs-on: ubuntu-24.04
+    timeout-minutes: 10
     steps:
       - name: Generate Token
         uses: actions/create-github-app-token@v2.2.1
