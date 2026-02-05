@@ -45,18 +45,6 @@
     {
       "matchFileNames": ["**/*"],
       "addLabels": ["auto-merge"]
-    },
-    {
-      "description": ["Go Group"],
-      "groupName": "Go",
-      "matchPackageNames": ["/go/", "/golang/"],
-      "matchDatasources": ["github-tags", "golang-version"],
-      "matchDepNames": ["/golang/"],
-      "group": {
-        "commitMessageTopic": "{{{groupName}}} group"
-      },
-      "separateMinorPatch": true,
-      "minimumGroupSize": 2
     }
   ]
 }
