@@ -25,7 +25,7 @@
   "author": "Christian Olsen",
   "license": "MIT",
   "dependencies": {
-    "lighthouse-badges": "1.4.3"
+    "lighthouse-badges": "1.4.4"
   },
   "devDependencies": {
     "@tailwindcss/cli": "4.1.18",
