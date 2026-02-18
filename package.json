@@ -28,11 +28,11 @@
     "lighthouse-badges": "1.4.4"
   },
   "devDependencies": {
-    "@tailwindcss/cli": "4.1.18",
+    "@tailwindcss/cli": "4.2.0",
     "@tailwindcss/typography": "0.5.19",
     "prettier": "3.8.1",
     "prettier-plugin-go-template": "0.0.15",
     "prettier-plugin-tailwindcss": "0.7.2",
-    "tailwindcss": "4.1.18"
+    "tailwindcss": "4.2.0"
   }
 }
