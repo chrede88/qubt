@@ -6,7 +6,7 @@
   "scripts": {
     "build-tailwind": "npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/compiled/main.css",
     "dev-tailwind": "npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/compiled/main.css --watch",
-    "example-site": "hugo server --source ./exampleSite --themesDir ../..",
+    "example-site": "hugo server --logLevel info --source ./exampleSite --themesDir ../..",
     "lighthouse": "export LIGHTHOUSE_BADGES_CONFIGURATION_PATH='./lighthouse-config.json' && npx lighthouse-badges --url https://chrede88.github.io/qubt/ --output-path ./lighthouse --badge-style plastic --save-report",
     "lint-check": "npx prettier --check ./layouts/",
     "lint": "npx prettier --write ./layouts/"

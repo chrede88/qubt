@@ -1,5 +1,5 @@
 <!doctype html>
-{{- $lang_code := site.LanguageCode | default "en-us" -}}
+{{- $lang_code := site.Language.Locale | default "en-us" -}}
 <html lang="{{ $lang_code }}">
   <head>
     {{ partial "head" . }}
