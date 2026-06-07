@@ -1,6 +1,6 @@
 {
   "name": "Qubt",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "Qubt blog theme for Hugo",
   "main": "index.js",
   "scripts": {
@@ -33,6 +33,6 @@
     "prettier": "3.8.3",
     "prettier-plugin-go-template": "0.0.15",
     "prettier-plugin-tailwindcss": "0.8.0",
-    "tailwindcss": "4.3.0"
+    "tailwindcss": "^4.3.0"
   }
 }

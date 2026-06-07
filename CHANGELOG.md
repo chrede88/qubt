@@ -6,6 +6,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+# [3.0.0] - 2026-06-07
+
+## Breaking Changes
+- Bumping minimum hugo version to `v0.158.0 extended`.
+- Change `LanguageCode` to `locale` in main config file (`hugo.yaml`).
+- Theme major version. `go.mod` & `module.yaml` configuration files needs to be updated.
+  Change the `require` line to the following in `go.mod`:
+  ```
+  require github.com/chrede88/qubt/v3 v3.0.0
+  ```
+
+  Change the module url in `module.yaml` to:
+  ```yaml
+  imports:
+    - path: github.com/chrede88/qubt/v3
+  ```
+
+  Notice the `v3` in the path for both files.
+
 # [2.1.0] - 2025-05-26
 
 ### Icons
@@ -215,7 +234,8 @@ Adding new icon:
 ## [1.0.0] - 2023-11-25
 - Initial release
 
-[unreleased]: https://github.com/chrede88/qubt/compare/v2.1.0...HEAD
+[unreleased]: https://github.com/chrede88/qubt/compare/v3.0.0...HEAD
+[3.0.0]: https://github.com/chrede88/qubt/releases/compare/v2.0.1...v2.1.0
 [2.1.0]: https://github.com/chrede88/qubt/releases/compare/v2.0.1...v2.1.0
 [2.0.1]: https://github.com/chrede88/qubt/releases/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/chrede88/qubt/releases/compare/v1.6.0...v2.0.0
