@@ -1,8 +1,8 @@
-/*! Qubt v3.0.0 | MIT License | https://github.com/Chrede88/qubt */
+/*! Qubt v3.0.1 | MIT License | https://github.com/Chrede88/qubt */
 
 @import "tailwindcss";
 
-@config '../../tailwind.config.js';
+@config "../../tailwind.config.js";
 
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,

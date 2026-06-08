@@ -1,5 +1,5 @@
 /*! tailwindcss v4.3.0 | MIT License | https://tailwindcss.com */
-/*! Qubt v3.0.0 | MIT License | https://github.com/Chrede88/qubt */
+/*! Qubt v3.0.1 | MIT License | https://github.com/Chrede88/qubt */
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -49,7 +49,6 @@
     --radius-sm: 0.25rem;
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
-    --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;

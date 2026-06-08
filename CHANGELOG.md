@@ -6,6 +6,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+# [3.0.1] - 2026-06-08
+
+## Goldmark
+- Updated default goldmark config for theme. If you're overwriting this part in your own config please update yours as well.
+```yaml
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderHooks:
+      image:
+        useEmbedded: fallback # <- updated
+      link:
+        useEmbedded: fallback # <- updated
+```
+
+## Hugo
+- Bump to v0.163.0
+
 # [3.0.0] - 2026-06-07
 
 ## Breaking Changes
@@ -24,6 +42,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   ```
 
   Notice the `v3` in the path for both files.
+
+## Hugo
+- Bump to v0.162.1
+
+## Go
+- Bump to v1.26.4
 
 # [2.1.0] - 2025-05-26
 
