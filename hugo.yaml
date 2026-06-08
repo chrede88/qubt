@@ -29,9 +29,9 @@ markup:
         title: true
     renderHooks:
       image:
-        enableDefault: true
+        useEmbedded: fallback
       link:
-        enableDefault: false
+        useEmbedded: fallback
     extensions:
       passthrough:
         delimiters:
