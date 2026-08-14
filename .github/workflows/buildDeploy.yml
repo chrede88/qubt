@@ -41,7 +41,7 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v7.0.0
         with:
-          go-version: '1.26.5'
+          go-version: '1.26.6'
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3.2.1
